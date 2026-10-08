@@ -56,3 +56,6 @@ node collect.mjs --experiment experiment.json --out /path/outside/website/privat
 ```
 
 The frozen experiment reserves USD 8.060034 for 36 maximum-length requests, within a USD 10 ceiling. Actual usage was much smaller. This script does not cap unrelated account spending or provider taxes. Retain every attempted run, including failures, and never present a replay as the original collection. A changed source or checker needs a new version and separately frozen experiment.
+
+
+Stable release / Version stable: [v0.2.0](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.2.0).

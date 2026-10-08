@@ -10,7 +10,7 @@ createServer(async(req,res)=>{
     if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405,{'Allow':'GET, HEAD'}).end(); return; }
     const p=resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
     const target=p===root?resolve(root,'index.html'):p;
-    if(!target.startsWith(root+sep)||target.slice(root.length).includes(`${sep}.`)||(!mime[extname(target)]&&target!==resolve(root,'LICENSE'))){res.writeHead(404).end();return;}
+    if(!target.startsWith(root+sep)||target.slice(root.length).includes(`${sep}.`)||target.startsWith(resolve(root,'private-results')+sep)||(!mime[extname(target)]&&target!==resolve(root,'LICENSE'))){res.writeHead(404).end();return;}
     const data=await readFile(target);
     res.writeHead(200,{'Content-Type':mime[extname(target)]||'text/plain; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
     res.end(req.method==='HEAD'?undefined:data);

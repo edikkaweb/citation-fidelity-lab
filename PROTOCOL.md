@@ -85,3 +85,21 @@ Aucune validation humaine, double annotation ou réplication externe obligatoire
 Les exemples rédigés restent dans `corpus.mjs`, les collectes dans `results.json`. Publier corpus, code, versions, empreintes et traces ensemble lorsqu'une collecte existe. D'ici là, conserver le statut `not_collected` et la liste vide. La démo ne nécessite aucune clé ; une éventuelle collecte se fera dans un environnement privé, jamais dans GitHub Pages.
 
 La distinction scientifique entre couverture des citations et soutien réel des affirmations précède ce laboratoire : [Liu, Zhang et Liang, 2023](https://aclanthology.org/2023.findings-emnlp.467/). Les cas Edikka illustrent des conditions métier ; ils ne constituent pas un classement des assistants actuels.
+
+## Collection amendment — 2026-10-08, frozen before the first request
+
+The first authorised collection is the **OpenAI-only portion** of the three-case design: 3 cases × 2 variants × 2 languages × 3 repetitions = **36 planned requests**. The first 12 cover price. This does not complete the planned two-provider comparison (72 requests across both providers).
+
+Provider/model: OpenAI `gpt-6-astra`; Responses API `/v1/responses`; `reasoning.effort: medium`; `max_output_tokens: 4000` (visible output and reasoning combined); `service_tier: default`; `store: false`; no tools or conversation history; no custom temperature. The official model page exposes no separate dated snapshot. Save every returned model ID and stop if it differs. No consumer ChatGPT result is implied.
+
+`experiment.json` freezes the exact prompts, order, parameters and SHA-256 fingerprints of the corpus, checker, protocol and collector. Case order: price, time, hosting. Within each repetition, FR then EN; alternate A/B order by repetition and language. This is deterministic counterbalancing, not randomisation. Never provide authored answers to the model. Freeze files before execution; any mismatch blocks collection.
+
+Cost ceiling: **USD 10 before tax**, for this collection only. Standard rates checked on 2026-10-08: USD 10 input, 1 cached input, 12.50 cache write and 50 output per million tokens. Before each request, reserve its full 4,000-token output allowance plus an input bound of UTF-8 prompt bytes + 1,024 framing tokens, all at the higher cache-write rate. Reservations are never released during the series. Refuse any request that exceeds the cumulative ceiling. Compare actual returned usage against its reservation and stop on an anomaly. This guard does not control unrelated account usage or replace provider billing.
+
+Run sequentially; stop on the first HTTP/transport failure, unexpected returned model or cost anomaly. No automatic retry or fallback model. An interrupted or timed-out request retains its reservation because billing may be unknown. A persistent lock prevents rerunning the same output directory. Technical failure, incomplete response and an undetected condition are different outcomes. Preserve raw responses privately; publish prompts, answers, usage, safe error codes, timestamps and indicators, excluding credentials, headers and private account metadata.
+
+### Français
+
+Première collecte autorisée : **36 appels OpenAI seulement**, dont 12 sur le prix, avec GPT-6 Astra, effort moyen, texte fourni et aucun outil. Les 36 appels du second fournisseur restent à réaliser pour compléter la comparaison initiale à deux fournisseurs. Les corpus et règles de la version 0.1 restent gelés ; aucune règle ne sera ajustée pour embellir cette collecte.
+
+Le fichier `experiment.json` conserve l'ordre, les prompts, les paramètres et les empreintes avant le premier appel. L'ordre A/B alterne selon la répétition et la langue, sans prétendre à une randomisation. Plafond de 10 USD hors taxes, réservation prudente avant chaque appel, aucune relance automatique et arrêt au premier échec technique. Une réponse incomplète reste indéterminée ; l'échec d'un appel ne devient pas une absence de citation. Le journal de consommation permet d'estimer le coût ; il ne constitue pas une facture.

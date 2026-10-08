@@ -1,0 +1,3895 @@
+{
+  "schema_version": 2,
+  "status": "collected",
+  "experiment_id": "openai-astra-2026-10-08",
+  "experiment_sha256": "31dc5d9c4d430055ac1aac3e3f6ce93e27f1a123a7f19a74c06c8e42b958f098",
+  "planned_count": 36,
+  "runs": [
+    {
+      "run_id": "openai-astra-price-fr-distributed-r1",
+      "order": 1,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:33:52.158Z",
+      "ended_at": "2026-10-08T16:33:59.024Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0c73979b0585d71c016ac7c5f18c2487d2a1463251da10fde7",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "**Non, pas dans le périmètre de l’offre ciblée décrit par Edikka.** Sa politique tarifaire du 20 août 2026 situe la refonte ciblée entre **5 000 et 9 999 € HT**, mais en exclut **le multilingue et une intégration métier spécifique**. Un site bilingue avec une intégration métier CRM sort donc de ce périmètre.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\n**Le passage ne permet pas de chiffrer le projet demandé ni d’affirmer qu’il dépasserait nécessairement 9 999 € HT.** Le budget final dépend du périmètre écrit et des responsabilités convenues ; la fourchette annoncée n’est ni un devis automatique ni une moyenne du marché français.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 181,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 405
+      },
+      "estimated_cost_usd": 0.01129,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "n’est ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-fr-grouped-r1",
+      "order": 2,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:33:59.027Z",
+      "ended_at": "2026-10-08T16:34:04.923Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_01ea2174056d949e016ac7c5f72db887d2b3cbfd879c2702b2",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non, **la fourchette de refonte ciblée ne couvre pas ce périmètre**. Selon la politique tarifaire **Edikka du 20 août 2026**, les **5 000 à 9 999 € HT** concernent un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles. **Le multilingue et une intégration métier spécifique en sont exclus** : un site bilingue avec intégration métier CRM sort donc de cette offre.\n\nLe passage ne permet toutefois pas de chiffrer ce projet ni d’affirmer que son coût dépassera nécessairement 9 999 € HT. Le budget final dépend du périmètre écrit et des responsabilités convenues. Cette fourchette n’est ni une moyenne du marché français ni un devis automatique.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 173,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 397
+      },
+      "estimated_cost_usd": 0.01089,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "present",
+            "evidence": [
+              "multilingue et une integration metier specifique en sont exclus"
+            ]
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "present",
+            "evidence": [
+              "integration metier specifique en sont exclus"
+            ]
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-grouped-r1",
+      "order": 3,
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:04.924Z",
+      "ended_at": "2026-10-08T16:34:08.708Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_080968b777afb5ed016ac7c5fd14b487d2980e7da69aa7887b",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—not within the targeted scope described in **Edikka’s pricing policy dated 20 August 2026**. Its **EUR 5,000–9,999 excluding VAT** range excludes both multilingual work and bespoke business integrations, so a bilingual website with a bespoke CRM integration falls outside that offer.\n\nThe range is not an automatic quotation. The final budget depends on the written scope and agreed responsibilities; the passage does not establish a price for your proposed project.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 277
+      },
+      "estimated_cost_usd": 0.00665,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "not an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-distributed-r1",
+      "order": 4,
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:08.709Z",
+      "ended_at": "2026-10-08T16:34:13.062Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_02ed9476f41208eb016ac7c600dcc887d28b31eb40bf7bfc20",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—not within the stated targeted scope. **Edikka’s pricing policy dated 20 August 2026** lists a targeted redesign at **EUR 5,000–9,999 excluding VAT**, but explicitly excludes **multilingual work and bespoke business integrations**. A bilingual website with a bespoke CRM integration therefore falls outside that scope.\n\nThe final budget depends on the written scope and agreed responsibilities. The passage does not establish a price for that project; the listed range is not an automatic quotation.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 283
+      },
+      "estimated_cost_usd": 0.00695,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "not an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-fr-grouped-r2",
+      "order": 5,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:13.063Z",
+      "ended_at": "2026-10-08T16:34:19.013Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0fa604cf9bf2fca8016ac7c605445487d296028a34cdb62d4b",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non, **pas dans le périmètre de l’offre de refonte ciblée**. Selon la politique tarifaire **Edikka du 20 août 2026**, la fourchette de **5 000 à 9 999 € HT** concerne un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe **multilingue** et une **intégration métier spécifique**, telle que le CRM demandé, sont explicitement exclus de ce périmètre.\n\nLe passage ne permet donc pas de chiffrer ce projet bilingue avec CRM ni d’affirmer quel budget suffirait. Le budget final dépend du périmètre écrit et des responsabilités convenues. La fourchette annoncée n’est **ni un devis automatique ni une moyenne du marché français**.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 174,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 398
+      },
+      "estimated_cost_usd": 0.01094,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "present",
+            "evidence": [
+              "multilingue** et une **integration metier specifique**, telle que le crm demande, sont explicitement exclus"
+            ]
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "present",
+            "evidence": [
+              "integration metier specifique**, telle que le crm demande, sont explicitement exclus"
+            ]
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "n’est **ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-fr-distributed-r2",
+      "order": 6,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:19.016Z",
+      "ended_at": "2026-10-08T16:34:24.487Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_06e6c3f5839b055a016ac7c60b2d4887d281f2de00f1d9c16d",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non, **la fourchette de refonte ciblée ne couvre pas le projet tel que décrit**. Selon la politique tarifaire **Edikka du 20 août 2026**, le multilingue — donc un site bilingue — et une intégration métier spécifique, telle que l’intégration CRM envisagée, sont exclus de ce périmètre.\n\nLes **5 000 à 9 999 € HT** concernent un parcours, une landing page stratégique ou un petit site limité à **trois gabarits**, avec des contenus disponibles.\n\nLe passage ne permet toutefois pas de chiffrer le projet bilingue avec CRM ni d’affirmer qu’il dépasserait nécessairement 9 999 € HT : le budget final dépend du **périmètre écrit et des responsabilités convenues**. Cette fourchette n’est ni un devis automatique ni une moyenne du marché français.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 186,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 410
+      },
+      "estimated_cost_usd": 0.01154,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "present",
+            "evidence": [
+              "multilingue — donc un site bilingue — et une integration metier specifique, telle que l’integration crm envisagee, sont exclus"
+            ]
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "present",
+            "evidence": [
+              "integration metier specifique, telle que l’integration crm envisagee, sont exclus"
+            ]
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "n’est ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-distributed-r2",
+      "order": 7,
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:24.488Z",
+      "ended_at": "2026-10-08T16:34:27.850Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0aa96958bb12f471016ac7c6109c3087d2a8f34273a3839d09",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—not within the stated targeted scope. **Edikka’s pricing policy dated 20 August 2026** lists a targeted redesign at **EUR 5,000–9,999 excluding VAT**, but explicitly excludes multilingual work and bespoke business integrations. A bilingual website with a bespoke CRM integration therefore falls outside that scope.\n\nThe final budget depends on the written scope and agreed responsibilities; the range is not an automatic quotation. The passage does not establish a price for the requested project.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 280
+      },
+      "estimated_cost_usd": 0.0068,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "not an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-grouped-r2",
+      "order": 8,
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:27.851Z",
+      "ended_at": "2026-10-08T16:34:31.052Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0e42c4eecbd6b9b7016ac7c613f74c87d2b161e40e0d87274a",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—not within the stated targeted scope. **Edikka’s pricing policy dated 20 August 2026** lists a targeted redesign at **EUR 5,000–9,999 excluding VAT**, but explicitly excludes multilingual work and bespoke business integrations. A bilingual website with a bespoke CRM integration therefore falls outside that offer.\n\nThe range covers a user journey, a strategic landing page, or a small website with up to three templates and available content. It is not an automatic quotation or a French market average. The passage does not establish a price for your requested project; the final budget depends on the written scope and agreed responsibilities.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 309
+      },
+      "estimated_cost_usd": 0.00825,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "present",
+            "evidence": [
+              "up to three templates"
+            ]
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "present",
+            "evidence": [
+              "available content"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "not an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-fr-distributed-r3",
+      "order": 9,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:31.056Z",
+      "ended_at": "2026-10-08T16:34:35.228Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0670baf555b6e68e016ac7c6172ebc87d2a2c36c4a4ea6933d",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non, **pas dans le périmètre de la refonte ciblée annoncé par Edikka**. Sa politique tarifaire du 20 août 2026 prévoit **5 000 à 9 999 € HT** pour un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nOr, **le multilingue et une intégration métier spécifique sont exclus** de cette offre : un site bilingue avec une intégration métier CRM sort donc du périmètre ciblé.\n\nLe passage ne permet toutefois pas de chiffrer ce projet ni d’affirmer que son coût dépasserait nécessairement 9 999 € HT. Le budget final dépend du périmètre écrit et des responsabilités convenues ; la fourchette n’est ni une moyenne du marché français ni un devis automatique.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 175,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 399
+      },
+      "estimated_cost_usd": 0.01099,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "present",
+            "evidence": [
+              "multilingue et une integration metier specifique sont exclus"
+            ]
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "present",
+            "evidence": [
+              "integration metier specifique sont exclus"
+            ]
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-fr-grouped-r3",
+      "order": 10,
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?\n\nSource: Edikka\n\nLa politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.\n\nCette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.\n\nCette fourchette ne constitue ni une moyenne du marché français ni un devis automatique.\n\nLes prestations de refonte sont classées par niveau de complexité.\n\nLe budget final dépend du périmètre écrit et des responsabilités convenues.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:35.230Z",
+      "ended_at": "2026-10-08T16:34:40.825Z",
+      "reserved_usd": 0.225188,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_026f95fcf2eda2cc016ac7c61b589487d2b9327cc3ce315c81",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non, **pas dans le périmètre de l’offre de refonte ciblée**. Selon la politique tarifaire **Edikka du 20 août 2026**, la fourchette de **5 000 à 9 999 € HT** concerne un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe **multilingue** et une **intégration métier spécifique**, telle que l’intégration CRM envisagée, sont explicitement exclus de ce périmètre.\n\nLe passage ne permet donc pas de déterminer le budget nécessaire pour ce projet bilingue avec CRM, ni d’affirmer qu’il dépasserait forcément 9 999 € HT. Le budget final dépend du **périmètre écrit et des responsabilités convenues** ; la fourchette annoncée n’est ni une moyenne du marché français ni un devis automatique.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 186,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 410
+      },
+      "estimated_cost_usd": 0.01154,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Deux bornes de la fourchette",
+            "status": "present",
+            "evidence": [
+              "5 000",
+              "9 999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Hors taxes",
+            "status": "present",
+            "evidence": [
+              "ht"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Offre ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limite de trois gabarits",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Contenus disponibles",
+            "status": "present",
+            "evidence": [
+              "contenus disponibles"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Exclusion du multilingue",
+            "status": "present",
+            "evidence": [
+              "multilingue** et une **integration metier specifique**, telle que l’integration crm envisagee, sont explicitement exclus"
+            ]
+          },
+          {
+            "id": "integration",
+            "label": "Exclusion des intégrations spécifiques",
+            "status": "present",
+            "evidence": [
+              "integration metier specifique**, telle que l’integration crm envisagee, sont explicitement exclus"
+            ]
+          },
+          {
+            "id": "commitment",
+            "label": "Fourchette sans devis automatique",
+            "status": "present",
+            "evidence": [
+              "ni un devis"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-grouped-r3",
+      "order": 11,
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.\n\nThis range is neither a French market average nor an automatic quotation.\n\nRedesign services are grouped by project complexity.\n\nThe final budget depends on the written scope and agreed responsibilities.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:40.829Z",
+      "ended_at": "2026-10-08T16:34:44.885Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0f6fb8f9f67f5bd4016ac7c620fbf887d2b964bd05c3a8039d",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—not within the stated targeted scope. **Edikka’s pricing policy dated 20 August 2026** lists targeted redesigns at **EUR 5,000–9,999 excluding VAT**, but explicitly excludes multilingual work and bespoke business integrations. A bilingual website with a bespoke CRM integration therefore falls outside that offer.\n\nThe range covers a user journey, a strategic landing page, or a small website with up to three templates and available content. It is neither a French market average nor an automatic quotation. The passage does not establish a price for your requested project; the final budget depends on the written scope and agreed responsibilities.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 309
+      },
+      "estimated_cost_usd": 0.00825,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "present",
+            "evidence": [
+              "up to three templates"
+            ]
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "present",
+            "evidence": [
+              "available content"
+            ]
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "neither a french market average nor an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-price-en-distributed-r3",
+      "order": 12,
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+      "question": "Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s targeted redesign budget cover a bilingual website with a bespoke CRM integration?\n\nSource: Edikka\n\nEdikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT.\n\nRedesign services are grouped by project complexity.\n\nThis offer covers a user journey, a strategic landing page or a small website with up to three templates and available content.\n\nThe final budget depends on the written scope and agreed responsibilities.\n\nThis range is neither a French market average nor an automatic quotation.\n\nMultilingual work and bespoke business integrations are excluded from this targeted scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:44.890Z",
+      "ended_at": "2026-10-08T16:34:48.302Z",
+      "reserved_usd": 0.224263,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0478919a2975a71c016ac7c625042487d29921a3267efdb20b",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No—those requirements are outside the targeted scope. **Edikka’s pricing policy dated 20 August 2026** lists a targeted redesign at **EUR 5,000–9,999 excluding VAT**, but explicitly excludes **multilingual work and bespoke business integrations**, which includes a bilingual website and bespoke CRM integration.\n\nThe final budget depends on the written scope and agreed responsibilities; the range is not an automatic quotation. The passage does not establish a price for the requested project.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 280
+      },
+      "estimated_cost_usd": 0.0068,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "price",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "amount",
+            "label": "Both ends of the range",
+            "status": "present",
+            "evidence": [
+              "5,000",
+              "9,999"
+            ]
+          },
+          {
+            "id": "tax",
+            "label": "Excluding VAT",
+            "status": "present",
+            "evidence": [
+              "excluding vat"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted offer",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "templates",
+            "label": "Limit of three templates",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "content",
+            "label": "Available content",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "multilingual",
+            "label": "Multilingual work excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "integration",
+            "label": "Bespoke integrations excluded",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "commitment",
+            "label": "Range without automatic quotation",
+            "status": "present",
+            "evidence": [
+              "not an automatic quotation"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-distributed-r1",
+      "order": 13,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:34:48.304Z",
+      "ended_at": "2026-10-08T16:35:00.635Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_08772783c0471ef8016ac7c6286ba487d28df4627cd4a24ce8",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, la fourchette de **4 à 7 semaines est indicative et concerne une refonte ciblée**, pas toute refonte. Les durées servent à orienter le cadrage du projet ; elles ne constituent donc pas une garantie de livraison.\n\nUne **refonte B2B complète** relève d’une autre catégorie, annoncée à **8 à 12 semaines, également à titre indicatif**.\n\nLe passage mentionne aussi un périmètre restreint — parcours, landing page ou petit site limité à trois gabarits, avec des contenus disponibles — mais le renvoi « cette catégorie » est ambigu.\n\n**Le calendrier engageant dépend de la proposition signée et de son périmètre**, et non de la seule fourchette publique.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 449,
+        "output_tokens_details": {
+          "reasoning_tokens": 284
+        },
+        "total_tokens": 665
+      },
+      "estimated_cost_usd": 0.02461,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-grouped-r1",
+      "order": 14,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:00.637Z",
+      "ended_at": "2026-10-08T16:35:03.867Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0340f4972fe620de016ac7c634c45487d28d3affa999881217",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, la fourchette de **4 à 7 semaines est indicative**, et non une garantie de livraison pour toute refonte.\n\nElle concerne uniquement une **refonte ciblée** : un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles. Une **refonte B2B complète** relève d’une autre catégorie, annoncée à **8 à 12 semaines, également à titre indicatif**.\n\nLe calendrier engageant dépend de **la proposition signée et de son périmètre**. La politique publique, datée du **20 août 2026**, précise que ces durées servent à orienter le cadrage du projet ; le passage ne permet donc pas de garantir un délai pour un projet particulier.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 380
+      },
+      "estimated_cost_usd": 0.01036,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-grouped-r1",
+      "order": 15,
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:03.871Z",
+      "ended_at": "2026-10-08T16:35:08.394Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_03e4848e647c98b6016ac7c637ff7487d2824368fd2c2171c7",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. Edikka describes **4 to 7 weeks as an indicative duration, not a delivery guarantee**, for a targeted redesign: a journey, a landing page, or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope. A complete B2B redesign is a separate category, with an indicative duration of **8 to 12 weeks**.\n\nThese ranges frame projects under Edikka’s public policy dated **20 August 2026**; they do not guarantee delivery of every redesign within four to seven weeks.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 292
+      },
+      "estimated_cost_usd": 0.00768,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "present",
+            "evidence": [
+              "4 to 7 weeks"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-distributed-r1",
+      "order": 16,
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:08.396Z",
+      "ended_at": "2026-10-08T16:35:11.238Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_04a2eea691010836016ac7c63c846487d28526e8df5874aabd",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. Edikka describes 4–7 weeks as an **indicative duration**, not a guarantee for every redesign. It applies to a targeted redesign covering a journey, a landing page, or a small website with up to three templates and available content.\n\nA complete B2B redesign is a separate category, with an indicative duration of 8–12 weeks. Under Edikka’s public policy dated 20 August 2026, the **binding schedule depends on the signed proposal and its scope**.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 278
+      },
+      "estimated_cost_usd": 0.00698,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "present",
+            "evidence": [
+              "4–7 weeks"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-grouped-r2",
+      "order": 17,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:11.243Z",
+      "ended_at": "2026-10-08T16:35:17.145Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0da204acca1667ac016ac7c63f5db087d282497dc34007e4d8",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, la fourchette de **4 à 7 semaines est indicative**, et non une garantie de livraison pour toute refonte. Elle concerne uniquement une **refonte ciblée** : un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe **calendrier engageant dépend de la proposition signée et de son périmètre**. Une refonte B2B complète relève d’une autre catégorie, estimée à **8 à 12 semaines**, également à titre indicatif.\n\nCes durées, issues de la politique publique datée du **20 août 2026**, servent à orienter le cadrage du projet. Le passage ne permet pas de déterminer le délai contractuel d’un projet particulier.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 380
+      },
+      "estimated_cost_usd": 0.01036,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-distributed-r2",
+      "order": 18,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:17.150Z",
+      "ended_at": "2026-10-08T16:35:22.186Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0c9d8f273f172bc1016ac7c645453087d29e5abdcf490d9416",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, la fourchette de **4 à 7 semaines** est **indicative** et concerne une **refonte ciblée**, pas toute refonte. Les durées servent à orienter le cadrage ; le calendrier engageant dépend de la **proposition signée et de son périmètre**.\n\nUne **refonte B2B complète** relève d’une autre catégorie, annoncée à **8 à 12 semaines**, également à titre indicatif.\n\nLe passage mentionne aussi un périmètre limité à « un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles », mais le rattachement de « cette catégorie » est ambigu. Il ne permet donc pas d’attribuer ce périmètre avec certitude.\n\nLa politique publique citée est datée du **20 août 2026**.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 184,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 400
+      },
+      "estimated_cost_usd": 0.01136,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-distributed-r2",
+      "order": 19,
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:22.188Z",
+      "ended_at": "2026-10-08T16:35:25.375Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_099cd1775d43da10016ac7c64a57e887d29dcd35aa13309f35",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. Edikka describes **4 to 7 weeks as an indicative duration**, not a delivery guarantee, for a targeted redesign covering a journey, a landing page or a small website with up to three templates and available content.\n\nA complete B2B redesign is a separate category, with an indicative duration of **8 to 12 weeks**. The binding schedule depends on the **signed proposal and its scope**.\n\nSource: Edikka, public policy dated 20 August 2026.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 102,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 275
+      },
+      "estimated_cost_usd": 0.00683,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "present",
+            "evidence": [
+              "4 to 7 weeks"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-grouped-r2",
+      "order": 20,
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:25.378Z",
+      "ended_at": "2026-10-08T16:35:29.193Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_097c1f3709a1146e016ac7c64d7fb887d299227b1622b8ff9b",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. According to **Edikka**, the **4-to-7-week range is indicative, not a delivery guarantee**, and applies only to a targeted redesign: a journey, a landing page, or a small website with up to three templates and available content.\n\nThe binding schedule depends on the **signed proposal and its scope**. A complete B2B redesign is a separate category, with an indicative duration of **8 to 12 weeks**. The public policy is dated **20 August 2026**.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 107,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 280
+      },
+      "estimated_cost_usd": 0.00708,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-distributed-r3",
+      "order": 21,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:29.196Z",
+      "ended_at": "2026-10-08T16:35:37.584Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_099c1c662e837035016ac7c6514fec87d28c5bb26c5b78abe7",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, les **4 à 7 semaines** sont une durée **indicative pour une refonte ciblée**, destinée à orienter le cadrage du projet, et non une garantie applicable à toute refonte.\n\nUne **refonte B2B complète** relève d’une autre catégorie, avec une durée elle aussi **indicative de 8 à 12 semaines**.\n\nLe **calendrier engageant dépend de la proposition signée et de son périmètre**. La politique publique, datée du **20 août 2026**, ne permet donc pas de conclure à une livraison garantie de toute refonte en 4 à 7 semaines.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 313,
+        "output_tokens_details": {
+          "reasoning_tokens": 169
+        },
+        "total_tokens": 529
+      },
+      "estimated_cost_usd": 0.01781,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-fr-grouped-r3",
+      "order": 22,
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+      "question": "La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La fourchette Edikka de 4 à 7 semaines garantit-elle la livraison de toute refonte dans ce délai ?\n\nSource: Edikka\n\nEdikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.\n\nCette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe calendrier engageant dépend de la proposition signée et de son périmètre.\n\nUne refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.\n\nLa politique publique est datée du 20 août 2026.\n\nLes durées servent à orienter le cadrage du projet.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:37.587Z",
+      "ended_at": "2026-10-08T16:35:40.726Z",
+      "reserved_usd": 0.224275,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0bb6dfcca48579e3016ac7c659bab487d2a2828ed5bb15289e",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. Selon **Edikka**, la fourchette de **4 à 7 semaines est indicative**, et non une garantie de livraison. Elle concerne uniquement une **refonte ciblée** : un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.\n\nLe **calendrier engageant dépend de la proposition signée et de son périmètre**. Une refonte B2B complète relève d’une autre catégorie, estimée à **8 à 12 semaines**, également à titre indicatif.\n\nCes durées, issues de la politique publique datée du **20 août 2026**, servent à orienter le cadrage du projet ; elles ne garantissent donc pas la livraison de toute refonte sous 4 à 7 semaines.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 216,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 380
+      },
+      "estimated_cost_usd": 0.01036,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution à Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Durée de 4 à 7 semaines",
+            "status": "present",
+            "evidence": [
+              "4 a 7 semaines"
+            ]
+          },
+          {
+            "id": "scope",
+            "label": "Refonte ciblée",
+            "status": "present",
+            "evidence": [
+              "refonte ciblee"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Durée indicative",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Calendrier lié à une proposition signée",
+            "status": "present",
+            "evidence": [
+              "proposition signee"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-grouped-r3",
+      "order": 23,
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:40.729Z",
+      "ended_at": "2026-10-08T16:35:44.044Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_06298a68b5d3244d016ac7c65cda3087d2891bead23c30d6c2",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. Edikka’s 4-to-7-week range is **indicative, not a guarantee**, and applies only to a targeted redesign: a journey, a landing page, or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope. A complete B2B redesign is a separate category with an indicative duration of 8 to 12 weeks.\n\nSource: Edikka’s public policy, dated 20 August 2026.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 276
+      },
+      "estimated_cost_usd": 0.00688,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-time-en-distributed-r3",
+      "order": 24,
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "source_text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+      "question": "Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does Edikka’s four-to-seven-week range guarantee delivery of every redesign within that time?\n\nSource: Edikka\n\nEdikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.\n\nThe public policy is dated 20 August 2026.\n\nThese durations help frame a project.\n\nA complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.\n\nThis category covers a journey, a landing page or a small website with up to three templates and available content.\n\nThe binding schedule depends on the signed proposal and its scope.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:44.045Z",
+      "ended_at": "2026-10-08T16:35:47.260Z",
+      "reserved_usd": 0.223,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_08a4159bf8a22de1016ac7c6602c3087d2ba7a92e402fac146",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. Edikka’s 4-to-7-week range is **indicative, not a guarantee**, and applies to a targeted redesign: a journey, a landing page, or a small website with up to three templates and available content.\n\nA complete B2B redesign is a separate category, with an indicative duration of 8 to 12 weeks. The binding schedule depends on the signed proposal and its scope.\n\nSource: Edikka’s public policy, dated 20 August 2026.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 173,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 276
+      },
+      "estimated_cost_usd": 0.00688,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "time",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Attribution to Edikka",
+            "status": "present",
+            "evidence": [
+              "edikka"
+            ]
+          },
+          {
+            "id": "duration",
+            "label": "Four-to-seven-week duration",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "scope",
+            "label": "Targeted redesign",
+            "status": "present",
+            "evidence": [
+              "targeted redesign"
+            ]
+          },
+          {
+            "id": "indicative",
+            "label": "Indicative duration",
+            "status": "present",
+            "evidence": [
+              "indicative"
+            ]
+          },
+          {
+            "id": "contract",
+            "label": "Schedule tied to a signed proposal",
+            "status": "present",
+            "evidence": [
+              "signed proposal"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-distributed-r1",
+      "order": 25,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:47.263Z",
+      "ended_at": "2026-10-08T16:35:50.164Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_04a9da4d33ae1214016ac7c663617487d28559e370b2bb4b3c",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un service d’hébergement de sites statiques qui publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt.\n\nLe processus de construction peut préparer les fichiers avant publication, mais cela ne prouve pas l’exécution d’un serveur PHP. La page citée ne documente pas cette exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 101,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 300
+      },
+      "estimated_cost_usd": 0.00704,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-grouped-r1",
+      "order": 26,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:50.166Z",
+      "ended_at": "2026-10-08T16:35:54.027Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_036ec4b7418eb1ae016ac7c666578887d2ad93f0c91fe277eb",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un hébergement de sites statiques publiant des fichiers HTML, CSS et JavaScript depuis un dépôt. Un processus de construction peut préparer ces fichiers, mais cela ne démontre pas l’exécution d’un serveur PHP.\n\nLa page citée ne documente pas cette exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo. Le passage ne permet pas non plus de déterminer si la démo utilise un serveur PHP ailleurs.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 114,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 313
+      },
+      "estimated_cost_usd": 0.00769,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-grouped-r1",
+      "order": 27,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 1,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:54.030Z",
+      "ended_at": "2026-10-08T16:35:58.865Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0e1f3e22f9466e0d016ac7c66a268c87d2b06512d81dad03c8",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. **GitHub Docs** describes GitHub Pages as static hosting that publishes HTML, CSS, and JavaScript files from a repository. A build process may prepare those files, but that does not establish that a PHP server runs on GitHub Pages.\n\nThe cited page does not document PHP server support, so it does not support claiming that GitHub Pages runs a PHP server for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 83,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 240
+      },
+      "estimated_cost_usd": 0.00572,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "present",
+            "evidence": [
+              "static hosting"
+            ]
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "present",
+            "evidence": [
+              "not establish that a php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-distributed-r1",
+      "order": 28,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 1,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:35:58.868Z",
+      "ended_at": "2026-10-08T16:36:02.224Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_04eb522605b8490a016ac7c66f0b8c87d2a2c404f92c51069f",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. GitHub Docs describes GitHub Pages as a **static site hosting service** that publishes HTML, CSS, and JavaScript files from a repository. Although a build process may prepare files before publication, the cited page does not document running a PHP server. It therefore does not support claiming that GitHub Pages runs a PHP server for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 74,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 231
+      },
+      "estimated_cost_usd": 0.00527,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "not_detected",
+            "evidence": []
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-grouped-r2",
+      "order": 29,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:02.225Z",
+      "ended_at": "2026-10-08T16:36:11.660Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_08de16da7eef3db1016ac7c672567487d2863445bac6cdcdfb",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un service d’hébergement statique qui publie des fichiers HTML, CSS et JavaScript issus d’un dépôt. Un processus de construction peut préparer ces fichiers, mais cela ne démontre pas l’exécution d’un serveur PHP.\n\nLa page citée ne documente pas une telle exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo. Elle ne permet pas non plus de déterminer si la démo utilise un serveur PHP hébergé ailleurs.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 318
+      },
+      "estimated_cost_usd": 0.00794,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "present",
+            "evidence": [
+              "hebergement statique"
+            ]
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-distributed-r2",
+      "order": 30,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:11.663Z",
+      "ended_at": "2026-10-08T16:36:14.461Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_01447be92221d67f016ac7c67bcd4887d2a812c1f6a698a149",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un service d’hébergement statique qui publie des fichiers HTML, CSS et JavaScript issus d’un dépôt. Un processus de construction peut préparer ces fichiers, mais cela ne prouve pas l’exécution d’un serveur PHP.\n\nLa page citée ne documente pas cette exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 296
+      },
+      "estimated_cost_usd": 0.00684,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "present",
+            "evidence": [
+              "hebergement statique"
+            ]
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-distributed-r2",
+      "order": 31,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 2,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:14.465Z",
+      "ended_at": "2026-10-08T16:36:23.719Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_01ba3587bc8babb5016ac7c67e958c87d2bd9785591dac4ad8",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. GitHub Docs describes GitHub Pages as a **static site hosting service** that publishes HTML, CSS, and JavaScript files from a repository. Although a build process may prepare files before publication, the cited page does not document running a PHP server and therefore does not support that claim for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 66,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 223
+      },
+      "estimated_cost_usd": 0.00487,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "not_detected",
+            "evidence": []
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-grouped-r2",
+      "order": 32,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 2,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:23.721Z",
+      "ended_at": "2026-10-08T16:36:26.557Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_015876b483a877f4016ac7c687db1887d299abcd36cd68b6aa",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. **GitHub Docs** describes GitHub Pages as static hosting that publishes HTML, CSS, and JavaScript files from a repository, potentially after a build process. The cited page does not document running a PHP server on GitHub Pages, so it does not support that claim for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 221
+      },
+      "estimated_cost_usd": 0.00477,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "present",
+            "evidence": [
+              "static hosting"
+            ]
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "not_detected",
+            "evidence": []
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-distributed-r3",
+      "order": 33,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:26.560Z",
+      "ended_at": "2026-10-08T16:36:29.752Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_083f34b73016deb7016ac7c68aafdc87d2857aa56032330e8c",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un service d’hébergement de sites statiques publiant des fichiers HTML, CSS et JavaScript issus d’un dépôt. Un processus de construction peut préparer ces fichiers, mais cela ne démontre pas l’exécution d’un serveur PHP.\n\nLa page citée ne documente pas une telle exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo. Elle ne permet pas non plus de déterminer si la démo utilise un serveur PHP hébergé ailleurs.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 319
+      },
+      "estimated_cost_usd": 0.00799,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-fr-grouped-r3",
+      "order": 34,
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+      "question": "La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Réponds à la question à partir du seul passage source fourni. Conserve le périmètre, les exclusions et les incertitudes associés à chaque chiffre ou affirmation. Si le passage ne permet pas de conclure, indique-le. Identifie la source par son nom ; n'invente ni preuve ni URL.\n\nQuestion: La documentation citée suffit-elle à affirmer que GitHub Pages exécute un serveur PHP pour cette démo ?\n\nSource: GitHub Docs\n\nGitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques.\n\nLe service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub.\n\nUn processus de construction peut préparer les fichiers avant leur publication.\n\nLa page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages.\n\nUn site peut être associé à un compte, une organisation ou un projet.\n\nUn site de projet est publié sous un chemin correspondant au dépôt.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:29.755Z",
+      "ended_at": "2026-10-08T16:36:32.686Z",
+      "reserved_usd": 0.224213,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_04ceecaab3b6d783016ac7c68de51487d2861ae9828062f80e",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "Non. **GitHub Docs** décrit GitHub Pages comme un service d’hébergement statique publiant des fichiers HTML, CSS et JavaScript depuis un dépôt. Un processus de construction peut préparer ces fichiers, mais cela ne démontre pas l’exécution d’un serveur PHP.\n\nLa page citée ne documente pas cette exécution : elle ne suffit donc pas à affirmer que GitHub Pages exécute un serveur PHP pour cette démo. Le passage ne permet pas non plus de déterminer si la démo utilise un serveur PHP ailleurs.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 199,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 114,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 313
+      },
+      "estimated_cost_usd": 0.00769,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "fr",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "Source GitHub identifiée",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Hébergement statique",
+            "status": "present",
+            "evidence": [
+              "hebergement statique"
+            ]
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS et JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "Capacité PHP non établie par la source",
+            "status": "indeterminate",
+            "evidence": [
+              "github pages execute un serveur php"
+            ]
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-grouped-r3",
+      "order": 35,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "repetition": 3,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nA build process may prepare those files before publication.\n\nThe cited page does not document running a PHP server on GitHub Pages.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:32.687Z",
+      "ended_at": "2026-10-08T16:36:35.409Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0551bafbfef89d63016ac7c690cf9c87d2862471cd43dcd906",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. GitHub Docs describes GitHub Pages as a **static site hosting service** that publishes HTML, CSS, and JavaScript files, potentially prepared by a build process. The cited page does not document running a PHP server on GitHub Pages, so it does not support that claim for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 65,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 222
+      },
+      "estimated_cost_usd": 0.00482,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "not_detected",
+            "evidence": []
+          }
+        ]
+      },
+      "network_error": null
+    },
+    {
+      "run_id": "openai-astra-hosting-en-distributed-r3",
+      "order": 36,
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "repetition": 3,
+      "source_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "source_text": "GitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+      "question": "Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?",
+      "request": {
+        "model": "gpt-6-astra",
+        "input": "Answer the question using only the supplied source passage. Keep the scope, exclusions and uncertainty attached to any number or claim. If the passage cannot establish an answer, say so. Identify the source by name; do not invent evidence or URLs.\n\nQuestion: Does the cited documentation support claiming that GitHub Pages runs a PHP server for this demo?\n\nSource: GitHub Docs\n\nGitHub Docs describes GitHub Pages as a static site hosting service.\n\nA site may belong to a user, organization or project.\n\nA project site is published under a repository-specific path.\n\nA build process may prepare those files before publication.\n\nIt publishes HTML, CSS and JavaScript files from a GitHub repository.\n\nThe cited page does not document running a PHP server on GitHub Pages.",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 4000,
+        "service_tier": "default",
+        "store": false,
+        "tools": []
+      },
+      "started_at": "2026-10-08T16:36:35.412Z",
+      "ended_at": "2026-10-08T16:36:38.496Z",
+      "reserved_usd": 0.2224,
+      "retry_of": null,
+      "http_status": 200,
+      "returned_model": "gpt-6-astra",
+      "response_id": "resp_0db12171be51565a016ac7c693861c87d28949c7138cfdd414",
+      "service_tier": "default",
+      "response_status": "completed",
+      "incomplete_details": null,
+      "error": null,
+      "answer": "No. **GitHub Docs** describes GitHub Pages as a static site hosting service that publishes HTML, CSS, and JavaScript files from a repository. A build process may prepare those files, but the cited page does not document running a PHP server on GitHub Pages. It therefore does not support claiming that GitHub Pages runs a PHP server for this demo.",
+      "refusal": "",
+      "complete": true,
+      "usage": {
+        "input_tokens": 157,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 234
+      },
+      "estimated_cost_usd": 0.00542,
+      "findings": {
+        "schema_version": 1,
+        "checker_version": "0.1.0",
+        "case_id": "hosting",
+        "language": "en",
+        "complete": true,
+        "kind": "deterministic_indicators",
+        "semantic_fidelity": "not_certified",
+        "controls": [
+          {
+            "id": "attribution",
+            "label": "GitHub source identified",
+            "status": "present",
+            "evidence": [
+              "github"
+            ]
+          },
+          {
+            "id": "static",
+            "label": "Static hosting",
+            "status": "not_detected",
+            "evidence": []
+          },
+          {
+            "id": "files",
+            "label": "HTML, CSS and JavaScript",
+            "status": "present",
+            "evidence": [
+              "html",
+              "css",
+              "javascript"
+            ]
+          },
+          {
+            "id": "php",
+            "label": "PHP capability not established by the source",
+            "status": "not_detected",
+            "evidence": []
+          }
+        ]
+      },
+      "network_error": null
+    }
+  ],
+  "stopped_reason": null,
+  "estimated_cost_usd": 0.31414,
+  "cost_note": "Calculated from returned usage, not a billing receipt. Unknown-cost attempts retain their full reservation.",
+  "note": "Real API attempts; authored teaching examples remain separately in corpus.mjs.",
+  "finished_at": "2026-10-08T16:36:38.500Z",
+  "counts": {
+    "planned": 36,
+    "attempted": 36,
+    "completed": 36,
+    "failed": 0,
+    "incomplete": 0,
+    "not_attempted": 0
+  },
+  "reserved_usd": 8.060034
+}

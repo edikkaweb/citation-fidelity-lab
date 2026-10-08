@@ -7,9 +7,7 @@ import {parseEnv} from 'node:util';
 import {cases,passage} from './corpus.mjs';
 import {check} from './checker.mjs';
 
-export const collectorVersion='0.3.0';
-export const priorSpentUsd=0.31414;
-export const cumulativeBudgetUsd=10;
+export const collectorVersion='0.2.0';
 export const endpoint='https://api.openai.com/v1/responses';
 export const rates={input:10,cached:1,cache_write:12.5,output:50}; // USD / 1M, Standard, <=272K context
 const root=dirname(fileURLToPath(import.meta.url));
@@ -20,13 +18,13 @@ const instructions={
 };
 export function makePlan(){
   const runs=[];
-  for(const c of cases.filter(c=>c.id==='time'))for(let repetition=1;repetition<=3;repetition++)for(const [li,lang] of ['fr','en'].entries()){
+  for(const c of cases)for(let repetition=1;repetition<=3;repetition++)for(const [li,lang] of ['fr','en'].entries()){
     const variants=(repetition+li)%2?['distributed','grouped']:['grouped','distributed'];
     for(const variant of variants){
       const source=passage(c,lang,variant);
       const prompt=`${instructions[lang]}\n\n${lang==='fr'?'Question':'Question'}: ${c.question[lang]}\n\nSource: ${c.sourceName}\n\n${source}`;
       const request={model:'gpt-6-astra',input:prompt,reasoning:{effort:'medium'},max_output_tokens:4000,service_tier:'default',store:false,tools:[]};
-      runs.push({run_id:`openai-astra-v02-${c.id}-${lang}-${variant}-r${repetition}`,order:runs.length+1,case_id:c.id,language:lang,variant,repetition,source_url:c.source,source_text:source,question:c.question[lang],request});
+      runs.push({run_id:`openai-astra-${c.id}-${lang}-${variant}-r${repetition}`,order:runs.length+1,case_id:c.id,language:lang,variant,repetition,source_url:c.source,source_text:source,question:c.question[lang],request});
     }
   }
   return runs;
@@ -60,19 +58,17 @@ export function observation(planned,body,httpStatus){
   return {http_status:httpStatus,returned_model:body?.model??null,response_id:body?.id??null,service_tier:body?.service_tier??null,response_status:body?.status??null,incomplete_details:body?.incomplete_details??null,error,answer,refusal,complete,usage:body?.usage??null,estimated_cost_usd:usageCost(body?.usage),findings:check({caseId:planned.case_id,lang:planned.language,text:answer.length<=24000?answer:'',complete})};
 }
 async function atomicJson(path,value){const tmp=path+'.tmp';await writeFile(tmp,JSON.stringify(value,null,2)+'\n',{mode:0o600});await rename(tmp,path);}
-async function hashes(){const out={};for(const name of ['corpus.mjs','corpus.json','checker.mjs','PROTOCOL.md','collect.mjs','archive/v0.2/results.json'])out[name]=sha(await readFile(resolve(root,name)));return out;}
+async function hashes(){const out={};for(const name of ['corpus.mjs','corpus.json','checker.mjs','PROTOCOL.md','collect.mjs'])out[name]=sha(await readFile(resolve(root,name)));return out;}
 export async function freeze(target){
   const runs=makePlan();const total=runs.reduce((n,r)=>n+reserveUsd(r.request),0);
-  if(total+priorSpentUsd>cumulativeBudgetUsd)throw new Error('Planned reservations exceed USD 10');
-  const experiment={schema_version:1,experiment_id:'openai-astra-duration-v02-2026-10-08',created_at:new Date().toISOString(),collector_version:collectorVersion,provider:'OpenAI',endpoint,api_version:'v1; no dated API version exposed',surface:'responses_api_supplied_text',model:'gpt-6-astra',model_snapshot_note:'Documentation exposes this ID only; save the returned ID for every run. No consumer-interface claim.',languages:['fr','en'],cases:['time'],corpus_version:'0.2.0',repetitions:3,planned_count:runs.length,budget_usd:cumulativeBudgetUsd,prior_spent_usd:priorSpentUsd,remaining_budget_usd:cumulativeBudgetUsd-priorSpentUsd,pricing:{source:'https://developers.openai.com/api/docs/pricing',reviewed_at:'2026-10-08',currency:'USD',tax_included:false,per_million_tokens:rates},reserved_max_usd:Number(total.toFixed(6)),order:'Duration only; alternate A/B order by repetition and language; no randomisation claimed.',retry_policy:'No automatic retry. Stop on the first technical failure. Preserve every started attempt; never reuse a run ID.',second_provider:'Not collected in this series; the two-provider design remains incomplete.',hashes:await hashes(),runs};
+  if(total>10)throw new Error('Planned reservations exceed USD 10');
+  const experiment={schema_version:1,experiment_id:'openai-astra-2026-10-08',created_at:new Date().toISOString(),collector_version:collectorVersion,provider:'OpenAI',endpoint,api_version:'v1; no dated API version exposed',surface:'responses_api_supplied_text',model:'gpt-6-astra',model_snapshot_note:'Documentation exposes this ID only; save the returned ID for every run. No consumer-interface claim.',languages:['fr','en'],cases:cases.map(c=>c.id),repetitions:3,planned_count:runs.length,budget_usd:10,pricing:{source:'https://developers.openai.com/api/docs/pricing',reviewed_at:'2026-10-08',currency:'USD',tax_included:false,per_million_tokens:rates},reserved_max_usd:Number(total.toFixed(6)),order:'Case order price/time/hosting; alternate A/B order by repetition and language; no randomisation claimed.',retry_policy:'No automatic retry. Stop on the first technical failure. Preserve every started attempt; never reuse a run ID.',second_provider:'Not collected in this series; the two-provider design remains incomplete.',hashes:await hashes(),runs};
   const handle=await open(target,'wx',0o644);await handle.writeFile(JSON.stringify(experiment,null,2)+'\n');await handle.close();return experiment;
 }
 export async function collect({experimentPath,outDir,keyFile,execute=false}){
   const experimentBytes=await readFile(experimentPath);const experiment=JSON.parse(experimentBytes);
   const current=await hashes();if(JSON.stringify(current)!==JSON.stringify(experiment.hashes))throw new Error('Frozen files changed; do not collect against altered material');
-  if(experiment.endpoint!==endpoint||experiment.budget_usd!==cumulativeBudgetUsd||experiment.prior_spent_usd!==priorSpentUsd||experiment.remaining_budget_usd!==cumulativeBudgetUsd-priorSpentUsd||JSON.stringify(experiment.runs)!==JSON.stringify(makePlan()))throw new Error('Unrecognised collection plan');
-  const prior=JSON.parse(await readFile(resolve(root,'archive/v0.2/results.json')));
-  if(prior.estimated_cost_usd!==priorSpentUsd||prior.runs.length!==36||prior.runs.some(r=>r.estimated_cost_usd===null))throw new Error('Previous spending cannot be established');
+  if(experiment.endpoint!==endpoint||experiment.budget_usd!==10||JSON.stringify(experiment.runs)!==JSON.stringify(makePlan()))throw new Error('Unrecognised collection plan');
   if(!execute)return {planned:experiment.planned_count,reserved_max_usd:experiment.reserved_max_usd,network_calls:0};
   let key=process.env.OPENAI_API_KEY??'';
   if(keyFile)key=parseEnv(await readFile(keyFile,'utf8')).OPENAI_API_KEY??'';
@@ -85,7 +81,7 @@ export async function collect({experimentPath,outDir,keyFile,execute=false}){
   await atomicJson(resolve(outDir,'results.json'),result);
   for(const planned of experiment.runs){
     const reserved=reserveUsd(planned.request);
-    if(!canReserve(ledger,reserved,experiment.remaining_budget_usd)){result.stopped_reason='budget_guard';break;}
+    if(!canReserve(ledger,reserved,experiment.budget_usd)){result.stopped_reason='budget_guard';break;}
     const row={run_id:planned.run_id,started_at:new Date().toISOString(),reserved_usd:reserved,state:'started'};
     ledger.push(row);await atomicJson(resolve(outDir,'ledger.json'),ledger);
     await atomicJson(resolve(outDir,planned.run_id+'.request.json'),planned);
@@ -108,7 +104,6 @@ export async function collect({experimentPath,outDir,keyFile,execute=false}){
     console.log(JSON.stringify({order:planned.order,run_id:planned.run_id,http_status:httpStatus,complete:record.complete,error:record.error,network_error:networkError,estimated_cost_usd:record.estimated_cost_usd,total_estimated_cost_usd:result.estimated_cost_usd}));
     if(result.stopped_reason)break;
   }
-  result.cumulative_estimated_cost_usd=Number((priorSpentUsd+result.estimated_cost_usd).toFixed(8));
   result.status=result.stopped_reason?'stopped':'collected';result.finished_at=new Date().toISOString();
   result.counts={planned:experiment.planned_count,attempted:result.runs.length,completed:result.runs.filter(r=>r.complete).length,failed:result.runs.filter(r=>r.http_status!==200||r.error||r.network_error).length,incomplete:result.runs.filter(r=>r.http_status===200&&!r.error&&!r.network_error&&!r.complete).length,not_attempted:experiment.planned_count-result.runs.length};
   result.reserved_usd=Number(ledger.reduce((n,r)=>n+r.reserved_usd,0).toFixed(6));

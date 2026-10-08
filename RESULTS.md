@@ -1,67 +1,48 @@
-# Collected results / Résultats collectés — 2026-10-08
+# Duration follow-up / Nouvelle série délai — 2026-10-08
 
-Release 0.2 · corpus/checker 0.1 frozen · GPT-6 Astra · supplied text, no tools.
+Release 0.3 · corpus 0.2 · unchanged checker 0.1 · GPT-6 Astra · supplied text, no tools.
 
 ## Français
 
-**36 appels tentés, 36 réponses complètes, 0 échecs et 0 réponses incomplètes.** Trois cas × deux variantes × deux langues × trois répétitions, un seul modèle. Coût estimé à partir des consommations retournées : **0.31414 USD hors taxes**, pour un plafond autorisé de 10 USD. Il s'agit d'un calcul, pas d'une facture.
+**12 nouveaux appels, 12 réponses complètes, 0 échecs, 0 réponses incomplètes.** Deux variantes × deux langues × trois répétitions, délai uniquement. Le renvoi « Cette catégorie » est remplacé par « La refonte ciblée » ; aucun autre fait n’a été changé. Les contrôles restent identiques.
 
-Cette série ne démontre aucun gain général de fidélité ni de citation. Les trois répétitions par condition ne permettent pas d'estimer un taux stable. Les réponses proviennent de l'API OpenAI, pas de l'interface ChatGPT. Aucune recherche web ni découverte spontanée de page n'a été testée. La comparaison avec un second fournisseur reste à réaliser.
+Coût calculé de cette série : **0.10378 USD HT**. Coût cumulé avec la série initiale : **0.41792 USD HT**, pour un plafond de 10 USD. Ces calculs reposent sur les consommations retournées ; ce ne sont pas des factures.
 
-Deux limites du dispositif sont visibles dans les traces :
+Les [36 essais initiaux et leur rapport](archive/v0.2/RESULTS.md) restent intacts, y compris les 12 essais de délai ambigus. Ils ne sont pas fusionnés avec les nouveaux essais. Le sélecteur principal conserve les 24 réponses initiales de prix/hébergement et présente les 12 nouvelles réponses du délai, avec leur provenance exportable. L’[ancienne interface](archive/v0.2/) permet de revoir la totalité de la première série.
 
-- **La détection manque des reformulations.** Dans le premier essai tarifaire FR, la réponse écrit « en exclut » et « limité à trois gabarits » ; les expressions figées du contrôleur ne les reconnaissent pas. Les statuts « non détecté » ne constituent donc pas des erreurs sémantiques établies. Les règles n'ont pas été ajustées après collecte.
-- **Des phrases identiques peuvent changer de référent lorsqu'on les déplace.** Dans le cas du délai, la variante A place « Cette catégorie » / « This category » après la catégorie B2B complète, alors que B la rattache à la refonte ciblée. Le premier essai FR A signale cette ambiguïté. L'expérience ne peut donc pas isoler un simple effet de mise en forme : la résolution du renvoi est un facteur de confusion. Le corpus original reste conservé ; une version ultérieure devra rendre ces phrases autonomes et faire l'objet d'une nouvelle collecte distincte.
-
-Les tableaux rapportent des expressions détectées, pas la vérité d'une réponse. Les quatre statuts sont conservés, sans score global. Une contradiction potentiellement niée ou citée reste indéterminée. Aucun jugement humain n'est requis pour reproduire ces contrôles ; leur portée reste limitée.
+Les expressions reconnues sont présentées ci-dessous, sans score global. Les règles manquent des reformulations valides ; une non-détection ne constitue pas une erreur sémantique établie. La correction retire un renvoi ambigu identifié ; elle ne prouve pas à elle seule la fidélité de toutes les réponses. Aucun résultat avant/après causal n’est revendiqué, puisque le texte a changé. Trois répétitions par condition ne permettent pas une généralisation. Aucun jury ou contrôle humain obligatoire.
 
 ## English
 
-**36 attempted calls, 36 complete answers, 0 failures and 0 incomplete answers.** Three cases × two variants × two languages × three repetitions, one model. Estimated cost from returned usage: **USD 0.31414 before tax**, within the authorised USD 10 ceiling. This calculation is not a billing receipt.
+**12 new calls, 12 complete answers, 0 failures, 0 incomplete answers.** Duration only: two variants × two languages × three repetitions. “This category” was replaced with “A targeted redesign”; all other facts and the checker remain unchanged.
 
-This series establishes no general fidelity or citation benefit. Three repetitions per condition do not establish stable rates. These are OpenAI API outputs, not observations of the ChatGPT interface. No web retrieval or spontaneous discovery was tested. The second-provider comparison remains uncollected.
+Calculated follow-up cost: **USD 0.10378 before tax**. Cumulative calculated cost: **USD 0.41792 before tax**, within the USD 10 ceiling. Returned usage supports these calculations; they are not billing receipts.
 
-The traces expose two limitations. First, the frozen checker misses valid-looking paraphrases: the first French price answer uses “en exclut” and “limité à trois gabarits”, which its patterns do not recognise. Non-detection is not an established semantic error; rules were not tuned after collection. Second, rearranging identical sentences can change a pronoun's referent. In time variant A, “This category” follows the complete B2B category, while B places it after targeted redesign. The first French A answer flags this ambiguity. The experiment therefore cannot isolate formatting alone. A future corpus must use self-contained sentences and be collected separately; this original corpus is preserved.
+The [original 36 attempts and report](archive/v0.2/RESULTS.md), including the ambiguous duration case, remain intact and separate. The main selector combines the original 24 price/hosting answers with the 12 new duration answers for inspection, with explicit exported provenance. It does not pool their statistics. The [archived interface](archive/v0.2/) retains every first-series answer.
 
-Counts below describe detected expressions, not answer truth. All four outcomes remain visible, with no overall score. Potentially negated or quoted conflicts remain indeterminate. No human judging is required to reproduce these checks; their limitations remain explicit.
+Counts describe recognised expressions, not overall meaning. Missed paraphrases remain a limitation; non-detection is not an established semantic error. Removing the identified ambiguous reference does not certify every answer. There is no causal before/after claim because the source changed; three repetitions per condition cannot establish stable rates. No required human judging.
+
+## Observed detector limitations / Limites constatées
+
+Four English answers contain the duration as “4-to-7-week” or “4–7-week”; the unchanged rule expects a different spelling and marks it non-detected. One French answer explicitly negates a guarantee but triggers the conservative indeterminate state. These are visible limitations of the indicator code, not evidence that the model omitted the duration or promised delivery. The original strings remain available for inspection; rules were not tuned after collection.
+
+Quatre réponses EN écrivent la durée sous la forme « 4-to-7-week » ou « 4–7-week », non reconnue par la règle figée. Une réponse FR nie explicitement une garantie et déclenche le statut prudent indéterminé. Ces limites du code ne prouvent ni une omission du délai ni une promesse du modèle. Les chaînes originales sont consultables ; les règles n’ont pas été ajustées après collecte.
+
+## Scope / Portée
+
+One model and provider only. API outputs are not consumer-interface observations. No web search, URL retrieval, spontaneous discovery or real citation lift was tested. No general formatting or fidelity benefit is established. The two-provider comparison remains outside this collection.
+
+Un seul fournisseur et modèle. L’API ne représente pas l’interface ChatGPT. Ni recherche web, ni accès à une URL, ni découverte spontanée, ni hausse de citation mesurée. Aucun bénéfice général de mise en forme ou de fidélité établi. La comparaison entre fournisseurs reste distincte.
 
 ## Records / Traces
 
-[Every prompt and answer](results.json) · [Frozen plan and fingerprints](experiment.json) · [Machine-readable counts](summary.json) · [Bilingual protocol](PROTOCOL.md) · [Collector](collect.mjs) · [Recompute this report](summarize.mjs)
+[12 new prompts and answers](results.json) · [Frozen plan](experiment.json) · [Counts](summary.json) · [Protocol](PROTOCOL.md) · [Collector](collect.mjs) · [Recompute](summarize.mjs) · [36 original records](archive/v0.2/results.json)
 
 A = distributed / dispersé ; B = grouped / rapproché.
 
-Each cell: **detected / non-detected / conflict / indeterminate**. Denominator: 3 attempted and complete answers for each cell in this collection. These counts must not be combined into a fidelity percentage.
+Each cell: **detected / non-detected / conflict / indeterminate**. Three attempted and complete answers per cell. No combined fidelity percentage.
 
-Chaque cellule : **détecté / non détecté / contradiction / indéterminé**. Dénominateur : 3 réponses tentées et complètes pour chaque cellule de cette collecte. Ne pas agréger en pourcentage de fidélité.
-
-### Un prix, avec son périmètre · FR
-
-| Condition | A · n=3 | B · n=3 |
-| --- | --- | --- |
-| Attribution à Edikka | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Deux bornes de la fourchette | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Hors taxes | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Offre ciblée | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Limite de trois gabarits | 0 / 3 / 0 / 0 | 0 / 3 / 0 / 0 |
-| Contenus disponibles | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Exclusion du multilingue | 2 / 1 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Exclusion des intégrations spécifiques | 2 / 1 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Fourchette sans devis automatique | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-
-### A price, with its scope · EN
-
-| Condition | A · n=3 | B · n=3 |
-| --- | --- | --- |
-| Attribution to Edikka | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Both ends of the range | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Excluding VAT | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Targeted offer | 3 / 0 / 0 / 0 | 2 / 1 / 0 / 0 |
-| Limit of three templates | 0 / 3 / 0 / 0 | 2 / 1 / 0 / 0 |
-| Available content | 0 / 3 / 0 / 0 | 2 / 1 / 0 / 0 |
-| Multilingual work excluded | 0 / 3 / 0 / 0 | 0 / 3 / 0 / 0 |
-| Bespoke integrations excluded | 0 / 3 / 0 / 0 | 0 / 3 / 0 / 0 |
-| Range without automatic quotation | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
+Chaque cellule : **détecté / non détecté / contradiction / indéterminé**. Trois réponses tentées et complètes par cellule. Aucun pourcentage global de fidélité.
 
 ### Une durée, sans promesse ajoutée · FR
 
@@ -70,7 +51,7 @@ Chaque cellule : **détecté / non détecté / contradiction / indéterminé**. 
 | Attribution à Edikka | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 | Durée de 4 à 7 semaines | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 | Refonte ciblée | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Durée indicative | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
+| Durée indicative | 3 / 0 / 0 / 0 | 2 / 0 / 0 / 1 |
 | Calendrier lié à une proposition signée | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 
 ### A duration, without an added promise · EN
@@ -78,29 +59,11 @@ Chaque cellule : **détecté / non détecté / contradiction / indéterminé**. 
 | Condition | A · n=3 | B · n=3 |
 | --- | --- | --- |
 | Attribution to Edikka | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Four-to-seven-week duration | 2 / 1 / 0 / 0 | 1 / 2 / 0 / 0 |
+| Four-to-seven-week duration | 0 / 3 / 0 / 0 | 2 / 1 / 0 / 0 |
 | Targeted redesign | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 | Indicative duration | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 | Schedule tied to a signed proposal | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
 
-### Une capacité, avec sa limite · FR
-
-| Condition | A · n=3 | B · n=3 |
-| --- | --- | --- |
-| Source GitHub identifiée | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Hébergement statique | 1 / 2 / 0 / 0 | 2 / 1 / 0 / 0 |
-| HTML, CSS et JavaScript | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Capacité PHP non établie par la source | 0 / 0 / 0 / 3 | 0 / 0 / 0 / 3 |
-
-### A capability, with its boundary · EN
-
-| Condition | A · n=3 | B · n=3 |
-| --- | --- | --- |
-| GitHub source identified | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| Static hosting | 0 / 3 / 0 / 0 | 2 / 1 / 0 / 0 |
-| HTML, CSS and JavaScript | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
-| PHP capability not established by the source | 0 / 3 / 0 / 0 | 1 / 2 / 0 / 0 |
-
 ## Integrity / Intégrité
 
-Results SHA-256: `36ba87793a83fc9620443cd3eaaebb181aae4bb8922fe8d9212df1219ca126c4`. Run `node summarize.mjs` to verify recorded prompts and recompute indicators and counts without any API call. The checker and corpus used for this series are pinned in `experiment.json`; results must not be silently re-scored after rule changes.
+Results SHA-256: `d5a9d0d201995c6a379975182efc27be5916bdcb810ee04e0e43f86b377d2e5b`. Run `node summarize.mjs` to verify recorded prompts and recompute indicators and counts without any API call. The checker and corpus used for this series are pinned in `experiment.json`; results must not be silently re-scored after rule changes.

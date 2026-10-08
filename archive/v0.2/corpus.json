@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.2.0",
+  "version": "0.1.0",
   "kind": "authored_teaching_material",
   "model_outputs": false,
   "cases": [
@@ -92,7 +92,7 @@
       "facts": {
         "fr": [
           "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée.",
-          "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.",
+          "Cette catégorie vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles.",
           "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines.",
           "Le calendrier engageant dépend de la proposition signée et de son périmètre.",
           "La politique publique est datée du 20 août 2026.",
@@ -100,7 +100,7 @@
         ],
         "en": [
           "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign.",
-          "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content.",
+          "This category covers a journey, a landing page or a small website with up to three templates and available content.",
           "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks.",
           "The binding schedule depends on the signed proposal and its scope.",
           "The public policy is dated 20 August 2026.",

@@ -1,22 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {priorSpentUsd,cumulativeBudgetUsd,makePlan,reserveUsd,canReserve,usageCost,redact,observation} from '../collect.mjs';
+import {makePlan,reserveUsd,canReserve,usageCost,redact,observation} from '../collect.mjs';
 import {collect,freeze} from '../collect.mjs';
 import {mkdtemp,mkdir,writeFile,readFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 const plan=makePlan();
-test('12 balanced duration requests, no teaching answers or tools',()=>{
-  assert.equal(plan.length,12);assert.equal(new Set(plan.map(r=>r.run_id)).size,12);
-  assert.ok(plan.slice(0,12).every(r=>r.case_id==='time'));
-  for(const c of ['time'])for(const l of ['fr','en'])for(const v of ['distributed','grouped'])assert.equal(plan.filter(r=>r.case_id===c&&r.language===l&&r.variant===v).length,3);
+test('36 balanced independent requests, no teaching answers or tools, price first',()=>{
+  assert.equal(plan.length,36);assert.equal(new Set(plan.map(r=>r.run_id)).size,36);
+  assert.ok(plan.slice(0,12).every(r=>r.case_id==='price'));
+  for(const c of ['price','time','hosting'])for(const l of ['fr','en'])for(const v of ['distributed','grouped'])assert.equal(plan.filter(r=>r.case_id===c&&r.language===l&&r.variant===v).length,3);
   for(const r of plan){assert.deepEqual(r.request.tools,[]);assert.equal(r.request.store,false);assert.equal(r.request.previous_response_id,undefined);assert.equal(r.request.max_output_tokens,4000);assert.equal(r.request.service_tier,'default');assert.equal(r.request.input.includes('Meaning changed'),false);assert.equal(r.request.input.includes('Le prix est garanti.'),false);}
 });
 test('reservations include reasoning/output limit, cache writes, framing and fit USD 10',()=>{
-  const total=plan.reduce((n,r)=>n+reserveUsd(r.request),0);assert.ok(total>2.5&&total<3);
+  const total=plan.reduce((n,r)=>n+reserveUsd(r.request),0);assert.ok(total>7.56&&total<10);
   const ledger=plan.map(r=>({reserved_usd:reserveUsd(r.request)}));
-  assert.equal(canReserve([{reserved_usd:9.5}],0.2,cumulativeBudgetUsd-priorSpentUsd),false);
-  assert.ok(total+priorSpentUsd<cumulativeBudgetUsd);
+  assert.equal(canReserve([{reserved_usd:9.9}],0.2,10),false);
   assert.equal(canReserve([{reserved_usd:9}],1,10),true);
   assert.equal(canReserve(ledger,10,10),false);assert.equal(canReserve([],NaN,10),false);
 });
@@ -46,7 +45,7 @@ test('dry run never requests a key; first error stops; persistent lock prevents 
     await freeze(experimentPath);await writeFile(keyFile,`OPENAI_API_KEY=${key}\n`);
     globalThis.fetch=async()=>{calls++;return new Response(JSON.stringify({error:{code:'invalid_api_key',type:'authentication_error',message:`Rejected ${key}`}}),{status:401});};
     const dry=await collect({experimentPath,outDir,keyFile:'/nonexistent'});assert.equal(dry.network_calls,0);assert.equal(calls,0);
-    const result=await collect({experimentPath,outDir,keyFile,execute:true});assert.equal(calls,1);assert.equal(result.attempted,1);assert.equal(result.failed,1);assert.equal(result.not_attempted,11);
+    const result=await collect({experimentPath,outDir,keyFile,execute:true});assert.equal(calls,1);assert.equal(result.attempted,1);assert.equal(result.failed,1);assert.equal(result.not_attempted,35);
     const publicData=await readFile(join(outDir,'results.json'),'utf8');assert.equal(publicData.includes(key),false);
     const raw=await readFile(join(outDir,plan[0].run_id+'.response.json'),'utf8');assert.equal(raw.includes(key),false);
     await assert.rejects(collect({experimentPath,outDir,keyFile,execute:true}),e=>e.code==='EEXIST');assert.equal(calls,1);

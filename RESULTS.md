@@ -67,3 +67,10 @@ Chaque cellule : **détecté / non détecté / contradiction / indéterminé**. 
 ## Integrity / Intégrité
 
 Results SHA-256: `d5a9d0d201995c6a379975182efc27be5916bdcb810ee04e0e43f86b377d2e5b`. Run `node summarize.mjs` to verify recorded prompts and recompute indicators and counts without any API call. The checker and corpus used for this series are pinned in `experiment.json`; results must not be silently re-scored after rule changes.
+
+
+## Separate fragment experiment / Expérience distincte par fragments
+
+Release 0.4 adds a new 72-call series with its own full-text control, retrieval rule and frozen plan. The preceding report remains the report of the original 36 + 12 calls. / La version 0.4 ajoute une série distincte de 72 appels, avec témoin complet, règle de récupération et plan figé. Le rapport ci-dessus conserve la lecture des 36 + 12 appels antérieurs.
+
+[Read the bilingual fragment report / Lire le rapport par fragments](retrieval/REPORT.md) · [Explore / Explorer](https://edikkaweb.github.io/citation-fidelity-lab/retrieval/)

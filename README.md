@@ -6,6 +6,8 @@ Compare a source passage with a restatement, condition by condition. Three cases
 
 **Release 0.3 adds 12 duration follow-up answers and preserves all 36 original answers in an intact archive.** All 48 calls completed across two separate series, with no technical failures. Total calculated usage cost: **USD 0.41792 before tax**. The follow-up replaces an ambiguous reference with “A targeted redesign”; the checker remains unchanged. The main selector shows the original price/hosting cases and the new duration case, with the matching source text and exported provenance. [Read the bilingual results and limitations](RESULTS.md). No pooled statistics, citation lift, ranking benefit or overall fidelity score is claimed.
 
+**Release 0.4 adds a separately frozen fragment-retrieval experiment: 72 complete responses, a full-text control and 48 retrieval-only sensitivity settings.** The direction changes by case: grouping exposes more conditions for price and duration, fewer for hosting under the frozen rule. No universal benefit is claimed. Series cost USD 1.01678; cumulative USD 1.43470 before tax across 120 calls in three distinct series. [Explore FR](retrieval/) · [Explore EN](retrieval/?lang=en) · [Bilingual report and limits](retrieval/REPORT.md). Claude has not been evaluated.
+
 ## Run locally
 
 Requires Node.js 22 or newer; no package installation and no API key.
@@ -39,6 +41,9 @@ Code is MIT-licensed. Edikka-authored corpus passages and teaching answers are C
 
 ## Français
 
+**La version 0.4 ajoute 72 réponses dans une expérience distincte par fragments, avec un témoin complet et 48 réglages de sensibilité sans appel supplémentaire.** L’effet dépend du cas : davantage de conditions fournies pour prix/délai, moins pour hébergement avec la règle figée. Aucun bénéfice universel établi. Coût de cette série : 1,01678 USD HT ; cumul des trois séries (120 appels) : 1,43470 USD HT. [Expérience interactive](retrieval/) · [Rapport bilingue](retrieval/REPORT.md). Claude n’a pas été évalué.
+
+
 Ce laboratoire rapproche une information de sa reprise, sans note globale. Les trois cas sont bilingues et le code fonctionne sans serveur applicatif ni clé API. Les deux variantes de chaque cas contiennent **exactement les mêmes phrases**, ordonnées différemment.
 
 La version 0.3 conserve les 36 premières réponses et ajoute 12 réponses sur le délai corrigé, dans une série distincte. Les 48 appels sont complets, sans échec technique ; coût cumulé calculé : **0,41792 USD hors taxes**. « La refonte ciblée » remplace le renvoi ambigu, sans modifier les contrôles ni les anciens résultats. Les réponses, sources et versions restent identifiables. [Le rapport](RESULTS.md) détaille les limites : aucun gain général démontré, aucun score global. « Non détecté » ne veut pas dire « faux », et « détecté » ne veut pas dire « fidèle ». Un texte incomplet reste indéterminé. Aucun contrôle humain n’est exigé pour utiliser ou reproduire cette version.
@@ -59,4 +64,6 @@ node collect.mjs --experiment experiment.json --out /path/outside/website/privat
 The frozen follow-up reserves USD 2.68425 for 12 maximum-length requests after subtracting the first series’ USD 0.31414 from the cumulative USD 10 ceiling. The new calculated cost was USD 0.10378. Actual usage was much smaller than the reserve. This script does not cap unrelated account spending or provider taxes. Retain every attempted run, including failures, and never present a replay as the original collection. A changed source or checker needs a new version and separately frozen experiment.
 
 
-Stable release / Version stable: [v0.3.0](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.3.0) · [v0.2.0 archive](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.2.0).
+Stable release / Version stable: [v0.4.0](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.4.0) · [v0.3.0](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.3.0) · [v0.2.0 archive](https://github.com/edikkaweb/citation-fidelity-lab/tree/v0.2.0).
+
+Fragment experiment: `node retrieval/summarize.mjs` recomputes descriptive counts without a key. Its frozen `retrieval/experiment.json`, protocol, source hashes, complete prompts and source fragments are published. Do not rerun the historical collector on its original output directory.

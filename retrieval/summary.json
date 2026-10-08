@@ -1,0 +1,5645 @@
+{
+  "schema_version": 1,
+  "experiment_id": "fragment-retrieval-v1-20261008",
+  "counts": {
+    "planned": 72,
+    "attempted": 72,
+    "complete": 72,
+    "incomplete": 0,
+    "failed": 0,
+    "not_attempted": 0
+  },
+  "estimated_cost_usd": 1.01678,
+  "cumulative_estimated_cost_usd": 1.4347,
+  "groups": [
+    {
+      "case_id": "price",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2"
+      ],
+      "exact_cited_condition_counts": [
+        2,
+        2,
+        2
+      ],
+      "total_declared_quotes": 7,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-fr-distributed-retrieved-r1",
+        "retrieval-v1-price-fr-distributed-retrieved-r2",
+        "retrieval-v1-price-fr-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        2
+      ],
+      "total_declared_quotes": 8,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-fr-grouped-retrieved-r1",
+        "retrieval-v1-price-fr-grouped-retrieved-r2",
+        "retrieval-v1-price-fr-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 15,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-fr-distributed-full-r1",
+        "retrieval-v1-price-fr-distributed-full-r2",
+        "retrieval-v1-price-fr-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 15,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-fr-grouped-full-r1",
+        "retrieval-v1-price-fr-grouped-full-r2",
+        "retrieval-v1-price-fr-grouped-full-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2"
+      ],
+      "exact_cited_condition_counts": [
+        2,
+        2,
+        2
+      ],
+      "total_declared_quotes": 6,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-en-distributed-retrieved-r1",
+        "retrieval-v1-price-en-distributed-retrieved-r2",
+        "retrieval-v1-price-en-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        2,
+        2,
+        3
+      ],
+      "total_declared_quotes": 7,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-en-grouped-retrieved-r1",
+        "retrieval-v1-price-en-grouped-retrieved-r2",
+        "retrieval-v1-price-en-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-en-distributed-full-r1",
+        "retrieval-v1-price-en-distributed-full-r2",
+        "retrieval-v1-price-en-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-price-en-grouped-full-r1",
+        "retrieval-v1-price-en-grouped-full-r2",
+        "retrieval-v1-price-en-grouped-full-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1"
+      ],
+      "exact_cited_condition_counts": [
+        1,
+        1,
+        1
+      ],
+      "total_declared_quotes": 6,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-fr-distributed-retrieved-r1",
+        "retrieval-v1-time-fr-distributed-retrieved-r2",
+        "retrieval-v1-time-fr-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 9,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-fr-grouped-retrieved-r1",
+        "retrieval-v1-time-fr-grouped-retrieved-r2",
+        "retrieval-v1-time-fr-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 15,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-fr-distributed-full-r1",
+        "retrieval-v1-time-fr-distributed-full-r2",
+        "retrieval-v1-time-fr-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 13,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-fr-grouped-full-r1",
+        "retrieval-v1-time-fr-grouped-full-r2",
+        "retrieval-v1-time-fr-grouped-full-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1"
+      ],
+      "exact_cited_condition_counts": [
+        1,
+        1,
+        1
+      ],
+      "total_declared_quotes": 6,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-en-distributed-retrieved-r1",
+        "retrieval-v1-time-en-distributed-retrieved-r2",
+        "retrieval-v1-time-en-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 9,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-en-grouped-retrieved-r1",
+        "retrieval-v1-time-en-grouped-retrieved-r2",
+        "retrieval-v1-time-en-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-en-distributed-full-r1",
+        "retrieval-v1-time-en-distributed-full-r2",
+        "retrieval-v1-time-en-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F4",
+        "F3"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-time-en-grouped-full-r1",
+        "retrieval-v1-time-en-grouped-full-r2",
+        "retrieval-v1-time-en-grouped-full-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 9,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-fr-distributed-retrieved-r1",
+        "retrieval-v1-hosting-fr-distributed-retrieved-r2",
+        "retrieval-v1-hosting-fr-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        1,
+        1,
+        1
+      ],
+      "total_declared_quotes": 3,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-fr-grouped-retrieved-r1",
+        "retrieval-v1-hosting-fr-grouped-retrieved-r2",
+        "retrieval-v1-hosting-fr-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-fr-distributed-full-r1",
+        "retrieval-v1-hosting-fr-distributed-full-r2",
+        "retrieval-v1-hosting-fr-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-fr-grouped-full-r1",
+        "retrieval-v1-hosting-fr-grouped-full-r2",
+        "retrieval-v1-hosting-fr-grouped-full-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        3,
+        3,
+        3
+      ],
+      "total_declared_quotes": 9,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-en-distributed-retrieved-r1",
+        "retrieval-v1-hosting-en-distributed-retrieved-r2",
+        "retrieval-v1-hosting-en-distributed-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "mode": "retrieved",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        1,
+        1,
+        1
+      ],
+      "total_declared_quotes": 3,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-en-grouped-retrieved-r1",
+        "retrieval-v1-hosting-en-grouped-retrieved-r2",
+        "retrieval-v1-hosting-en-grouped-retrieved-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "mode": "full",
+      "variant": "distributed",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F3",
+        "F2",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-en-distributed-full-r1",
+        "retrieval-v1-hosting-en-distributed-full-r2",
+        "retrieval-v1-hosting-en-distributed-full-r3"
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "mode": "full",
+      "variant": "grouped",
+      "attempted": 3,
+      "complete": 3,
+      "valid_json": 3,
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "exact_cited_condition_counts": [
+        4,
+        4,
+        4
+      ],
+      "total_declared_quotes": 12,
+      "invalid_quotes": 0,
+      "runs": [
+        "retrieval-v1-hosting-en-grouped-full-r1",
+        "retrieval-v1-hosting-en-grouped-full-r2",
+        "retrieval-v1-hosting-en-grouped-full-r3"
+      ]
+    }
+  ],
+  "sensitivity_matrix": [
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka"
+          ],
+          "score": 0.6882472016116852
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "site",
+            "avec"
+          ],
+          "score": 0.6396021490668313
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "integration",
+            "metier"
+          ],
+          "score": 0.48507125007266594
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka"
+          ],
+          "score": 0.6882472016116852
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "site",
+            "avec"
+          ],
+          "score": 0.6396021490668313
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "integration",
+            "metier"
+          ],
+          "score": 0.48507125007266594
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec"
+          ],
+          "score": 0.8574929257125441
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "integration",
+            "metier"
+          ],
+          "score": 0.6123724356957946
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec"
+          ],
+          "score": 0.8574929257125441
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "integration",
+            "metier"
+          ],
+          "score": 0.6123724356957946
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec"
+          ],
+          "score": 0.944911182523068
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "refonte"
+          ],
+          "score": 0.5547001962252291
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            }
+          ],
+          "matching_terms": [
+            "integration",
+            "metier"
+          ],
+          "score": 0.48507125007266594
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec"
+          ],
+          "score": 0.944911182523068
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "refonte"
+          ],
+          "score": 0.5547001962252291
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            }
+          ],
+          "matching_terms": [
+            "integration",
+            "metier"
+          ],
+          "score": 0.48507125007266594
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec",
+            "integration",
+            "metier"
+          ],
+          "score": 1.1666666666666667
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "refonte"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+            }
+          ],
+          "matching_terms": [
+            "refonte",
+            "ciblee",
+            "edikka",
+            "site",
+            "avec",
+            "integration",
+            "metier"
+          ],
+          "score": 1.1666666666666667
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Les prestations de refonte sont classées par niveau de complexité."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "refonte"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Les prestations de refonte sont classées par niveau de complexité."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Montant, offre et taxes",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre et contenus",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Pas un devis automatique",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign"
+          ],
+          "score": 0.6546536707079772
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "bespoke"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "website"
+          ],
+          "score": 0.4364357804719848
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign"
+          ],
+          "score": 0.6546536707079772
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "bespoke"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "budget",
+            "website"
+          ],
+          "score": 0.4364357804719848
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        },
+        {
+          "fact_id": "F4",
+          "text": "This range is neither a French market average nor an automatic quotation."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website"
+          ],
+          "score": 0.6761234037828132
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            },
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "budget",
+            "bespoke"
+          ],
+          "score": 0.6255432421712244
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website"
+          ],
+          "score": 0.6761234037828132
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            },
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "budget",
+            "bespoke"
+          ],
+          "score": 0.6255432421712244
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F6",
+          "text": "The final budget depends on the written scope and agreed responsibilities."
+        },
+        {
+          "fact_id": "F4",
+          "text": "This range is neither a French market average nor an automatic quotation."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website"
+          ],
+          "score": 0.7302967433402214
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "redesign",
+            "budget"
+          ],
+          "score": 0.5773502691896258
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            },
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "bespoke"
+          ],
+          "score": 0.5
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website"
+          ],
+          "score": 0.7302967433402214
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "redesign",
+            "budget"
+          ],
+          "score": 0.5773502691896258
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            },
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            }
+          ],
+          "matching_terms": [
+            "targeted",
+            "bespoke"
+          ],
+          "score": 0.5
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        },
+        {
+          "fact_id": "F6",
+          "text": "The final budget depends on the written scope and agreed responsibilities."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website",
+            "bespoke"
+          ],
+          "score": 0.8111071056538127
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "redesign",
+            "budget"
+          ],
+          "score": 0.4472135954999579
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "price",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+            },
+            {
+              "fact_id": "F2",
+              "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "targeted",
+            "redesign",
+            "website",
+            "bespoke"
+          ],
+          "score": 0.8111071056538127
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "This range is neither a French market average nor an automatic quotation."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Redesign services are grouped by project complexity."
+            },
+            {
+              "fact_id": "F6",
+              "text": "The final budget depends on the written scope and agreed responsibilities."
+            }
+          ],
+          "matching_terms": [
+            "redesign",
+            "budget"
+          ],
+          "score": 0.4472135954999579
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka’s pricing policy dated 20 August 2026 places a targeted redesign between EUR 5,000 and 9,999 excluding VAT."
+        },
+        {
+          "fact_id": "F2",
+          "text": "This offer covers a user journey, a strategic landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Multilingual work and bespoke business integrations are excluded from this targeted scope."
+        },
+        {
+          "fact_id": "F4",
+          "text": "This range is neither a French market average nor an automatic quotation."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Redesign services are grouped by project complexity."
+        },
+        {
+          "fact_id": "F6",
+          "text": "The final budget depends on the written scope and agreed responsibilities."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Amount, offer and tax",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Scope and content",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Exclusions",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Not an automatic quote",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.8320502943378437
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "refonte"
+          ],
+          "score": 0.2182178902359924
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F5",
+          "text": "La politique publique est datée du 20 août 2026."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.8320502943378437
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "refonte"
+          ],
+          "score": 0.2182178902359924
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F5",
+          "text": "La politique publique est datée du 20 août 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Les durées servent à orienter le cadrage du projet."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.7071067811865476
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.35355339059327373
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F5",
+          "text": "La politique publique est datée du 20 août 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Les durées servent à orienter le cadrage du projet."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.7071067811865476
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.35355339059327373
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F5",
+          "text": "La politique publique est datée du 20 août 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Les durées servent à orienter le cadrage du projet."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+        },
+        {
+          "fact_id": "F2",
+          "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.6396021490668313
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.48507125007266594
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F2",
+          "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.6396021490668313
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.48507125007266594
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F2",
+          "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.5669467095138409
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F2",
+          "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+            },
+            {
+              "fact_id": "F2",
+              "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+            },
+            {
+              "fact_id": "F4",
+              "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.5669467095138409
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+            },
+            {
+              "fact_id": "F5",
+              "text": "La politique publique est datée du 20 août 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Les durées servent à orienter le cadrage du projet."
+            }
+          ],
+          "matching_terms": [
+            "semaines",
+            "refonte"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka donne une durée indicative de 4 à 7 semaines pour une refonte ciblée."
+        },
+        {
+          "fact_id": "F2",
+          "text": "La refonte ciblée vise un parcours, une landing page ou un petit site limité à trois gabarits, avec des contenus disponibles."
+        },
+        {
+          "fact_id": "F4",
+          "text": "Le calendrier engageant dépend de la proposition signée et de son périmètre."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Une refonte B2B complète relève d’une autre catégorie, avec une durée indicative de 8 à 12 semaines."
+        },
+        {
+          "fact_id": "F5",
+          "text": "La politique publique est datée du 20 août 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Les durées servent à orienter le cadrage du projet."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Durée indicative",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Périmètre ciblé",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Autre catégorie",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Calendrier engageant",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.5547001962252291
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.2581988897471611
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.22941573387056174
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F5",
+          "text": "The public policy is dated 20 August 2026."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.5547001962252291
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.2581988897471611
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.22941573387056174
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F5",
+          "text": "The public policy is dated 20 August 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "These durations help frame a project."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.47140452079103173
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.18569533817705186
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F5",
+          "text": "The public policy is dated 20 August 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "These durations help frame a project."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.47140452079103173
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.18569533817705186
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F5",
+          "text": "The public policy is dated 20 August 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "These durations help frame a project."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+        },
+        {
+          "fact_id": "F2",
+          "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The binding schedule depends on the signed proposal and its scope."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.4472135954999579
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.25
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F2",
+          "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": false
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.4472135954999579
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.25
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F2",
+          "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The binding schedule depends on the signed proposal and its scope."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.3922322702763681
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.2182178902359924
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F2",
+          "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The binding schedule depends on the signed proposal and its scope."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "time",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+            },
+            {
+              "fact_id": "F2",
+              "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The binding schedule depends on the signed proposal and its scope."
+            }
+          ],
+          "matching_terms": [
+            "edikka",
+            "redesign"
+          ],
+          "score": 0.3922322702763681
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+            },
+            {
+              "fact_id": "F5",
+              "text": "The public policy is dated 20 August 2026."
+            },
+            {
+              "fact_id": "F6",
+              "text": "These durations help frame a project."
+            }
+          ],
+          "matching_terms": [
+            "redesign"
+          ],
+          "score": 0.2182178902359924
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "Edikka gives an indicative duration of 4 to 7 weeks for a targeted redesign."
+        },
+        {
+          "fact_id": "F2",
+          "text": "A targeted redesign covers a journey, a landing page or a small website with up to three templates and available content."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The binding schedule depends on the signed proposal and its scope."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A complete B2B redesign belongs to another category, with an indicative duration of 8 to 12 weeks."
+        },
+        {
+          "fact_id": "F5",
+          "text": "The public policy is dated 20 August 2026."
+        },
+        {
+          "fact_id": "F6",
+          "text": "These durations help frame a project."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Indicative duration",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Targeted scope",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Other category",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "Binding schedule",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.212678125181665
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.47140452079103173
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.212678125181665
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.47140452079103173
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Un site peut être associé à un compte, une organisation ou un projet."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F3",
+          "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Un site peut être associé à un compte, une organisation ou un projet."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.25
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4588314677411235
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F3",
+          "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            },
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.25
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4588314677411235
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.0425720702853738
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.3849001794597505
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Un site peut être associé à un compte, une organisation ou un projet."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "fr",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+            },
+            {
+              "fact_id": "F5",
+              "text": "Un site peut être associé à un compte, une organisation ou un projet."
+            },
+            {
+              "fact_id": "F6",
+              "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+            }
+          ],
+          "matching_terms": [
+            "citee",
+            "github",
+            "pages",
+            "serveur",
+            "php"
+          ],
+          "score": 1.0425720702853738
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+            },
+            {
+              "fact_id": "F2",
+              "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+            },
+            {
+              "fact_id": "F3",
+              "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.3849001794597505
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs décrit GitHub Pages comme un service d’hébergement de sites statiques."
+        },
+        {
+          "fact_id": "F2",
+          "text": "Le service publie des fichiers HTML, CSS et JavaScript provenant d’un dépôt GitHub."
+        },
+        {
+          "fact_id": "F3",
+          "text": "Un processus de construction peut préparer les fichiers avant leur publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "La page citée ne documente pas l’exécution d’un serveur PHP par GitHub Pages."
+        },
+        {
+          "fact_id": "F5",
+          "text": "Un site peut être associé à un compte, une organisation ou un projet."
+        },
+        {
+          "fact_id": "F6",
+          "text": "Un site de projet est publié sous un chemin correspondant au dépôt."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Service statique",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "Types de fichiers",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Construction préalable",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP non documenté",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.25
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.5163977794943222
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.25
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.5163977794943222
+        },
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C3"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+        },
+        {
+          "fact_id": "F5",
+          "text": "A site may belong to a user, organization or project."
+        },
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.0206207261596576
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F3",
+          "text": "A build process may prepare those files before publication."
+        },
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "distributed",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.0206207261596576
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.42640143271122083
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+        },
+        {
+          "fact_id": "F5",
+          "text": "A site may belong to a user, organization or project."
+        },
+        {
+          "fact_id": "F6",
+          "text": "A project site is published under a repository-specific path."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A build process may prepare those files before publication."
+        },
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.212678125181665
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F3",
+          "text": "A build process may prepare those files before publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "size": 2,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 2,
+          "facts": [
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            },
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.212678125181665
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.5
+        },
+        {
+          "chunk_id": "C3",
+          "offset": 4,
+          "facts": [
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [],
+          "score": 0
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+        },
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A build process may prepare those files before publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 1,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.0660035817780522
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4082482904638631
+        }
+      ],
+      "selected_chunk_ids": [
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        },
+        {
+          "fact_id": "F5",
+          "text": "A site may belong to a user, organization or project."
+        },
+        {
+          "fact_id": "F6",
+          "text": "A project site is published under a repository-specific path."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": false
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": false
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": false
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    },
+    {
+      "case_id": "hosting",
+      "language": "en",
+      "variant": "grouped",
+      "size": 3,
+      "top_k": 2,
+      "ranked": [
+        {
+          "chunk_id": "C2",
+          "offset": 3,
+          "facts": [
+            {
+              "fact_id": "F4",
+              "text": "The cited page does not document running a PHP server on GitHub Pages."
+            },
+            {
+              "fact_id": "F5",
+              "text": "A site may belong to a user, organization or project."
+            },
+            {
+              "fact_id": "F6",
+              "text": "A project site is published under a repository-specific path."
+            }
+          ],
+          "matching_terms": [
+            "cited",
+            "github",
+            "pages",
+            "php",
+            "server"
+          ],
+          "score": 1.0660035817780522
+        },
+        {
+          "chunk_id": "C1",
+          "offset": 0,
+          "facts": [
+            {
+              "fact_id": "F1",
+              "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+            },
+            {
+              "fact_id": "F2",
+              "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+            },
+            {
+              "fact_id": "F3",
+              "text": "A build process may prepare those files before publication."
+            }
+          ],
+          "matching_terms": [
+            "github",
+            "pages"
+          ],
+          "score": 0.4082482904638631
+        }
+      ],
+      "selected_chunk_ids": [
+        "C1",
+        "C2"
+      ],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "text": "GitHub Docs describes GitHub Pages as a static site hosting service."
+        },
+        {
+          "fact_id": "F2",
+          "text": "It publishes HTML, CSS and JavaScript files from a GitHub repository."
+        },
+        {
+          "fact_id": "F3",
+          "text": "A build process may prepare those files before publication."
+        },
+        {
+          "fact_id": "F4",
+          "text": "The cited page does not document running a PHP server on GitHub Pages."
+        },
+        {
+          "fact_id": "F5",
+          "text": "A site may belong to a user, organization or project."
+        },
+        {
+          "fact_id": "F6",
+          "text": "A project site is published under a repository-specific path."
+        }
+      ],
+      "condition_availability": [
+        {
+          "fact_id": "F1",
+          "label": "Static hosting",
+          "provided": true
+        },
+        {
+          "fact_id": "F2",
+          "label": "File types",
+          "provided": true
+        },
+        {
+          "fact_id": "F3",
+          "label": "Build step",
+          "provided": true
+        },
+        {
+          "fact_id": "F4",
+          "label": "PHP not documented",
+          "provided": true
+        }
+      ]
+    }
+  ],
+  "semantic_fidelity_score": null,
+  "cross_provider_comparison": false,
+  "results_sha256": "28f0af9f5c50656d17dabc112dd460a160d9dba07f2e49e5a3d1567fa6b0bc40"
+}

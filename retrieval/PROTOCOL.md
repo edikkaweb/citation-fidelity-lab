@@ -1,0 +1,35 @@
+# Fragment retrieval experiment · protocol 1.0
+
+Design date: 2026-10-08. Frozen before any API call in this series. This is a separate experiment; the earlier 36 + 12 answers and their checker stay unchanged.
+
+## Français
+
+**Question.** Quand les mêmes six phrases sont ordonnées différemment, quelles conditions notre récupération locale fournit-elle au modèle, et quels extraits le modèle cite-t-il ensuite ? Aucun avantage de A ou B n’est présupposé. Un résultat nul ou défavorable sera publié.
+
+**Corpus.** Les trois cas pédagogiques FR/EN du corpus 0.2 existant (prix, délai, hébergement). A et B sont les permutations déjà publiées des mêmes phrases, sans ajout de faits ni choix d’un nouveau cas après observation. Les identifiants F1–F6 suivent les faits, indépendamment de leur position. Ce petit corpus rédigé ne représente pas la diversité des pages web.
+
+**Récupération principale.** Découpage depuis le début du passage en groupes de trois phrases consécutives, sans chevauchement. Score lexical local : nombre de termes distincts de la question présents dans le fragment, divisé par la racine carrée du nombre de termes du fragment. Minuscules, accents retirés, petite liste de mots-outils fixée dans le code ; aucun embedding, modèle ou recherche web. Un seul fragment est retenu ; en cas d’égalité, le premier dans le texte. Le modèle reçoit uniquement les phrases sélectionnées, leurs identifiants et le nom de la source. Le score ne reproduit pas le classement d’un moteur de recherche.
+
+**Témoin.** Pour chaque cas/langue/variante, une condition donne les six phrases complètes au même modèle, avec la même consigne et les mêmes paramètres. Trois répétitions indépendantes par condition : 3 cas × 2 langues × 2 variantes × 2 modes × 3 répétitions = **72 appels**. L’ordre des variantes et des modes alterne ; aucune randomisation n’est revendiquée. Aucun appel ne voit la réponse d’un autre.
+
+**Sensibilité sans génération.** Publier aussi toute la matrice de récupération avec groupes de deux ou trois phrases et un ou deux fragments retenus. Cette matrice ne coûte aucun appel API et ne produit aucune réponse de modèle. Elle montre la dépendance au découpage et au nombre de fragments. Ne pas sélectionner après coup le réglage le plus favorable.
+
+**Mesures.** 1. Présence des quatre phrases portant les conditions identifiées dans chaque cas : mesure exacte par identifiant, en amont du modèle. 2. Identifiants que le modèle cite avec un extrait textuellement présent dans les fragments reçus, et citations invalides. 3. Réponses brutes, complétude, erreurs, usages et coût. Un extrait textuellement exact ne garantit pas qu’il soutient toute la réponse. Les constats du contrôleur historique 0.1 sont un diagnostic secondaire, pas une mesure de vérité. Aucun score global de fidélité et aucun « taux d’erreur » sémantique sans référence indépendante.
+
+**Collecte OpenAI.** Responses API, `gpt-6-astra`, effort `medium`, `max_output_tokens:1200` (raisonnement compris), service `default`, `store:false`, `tools:[]`. La réponse structurée contient un texte et des extraits accompagnés de leurs identifiants. Les paramètres, prompts et empreintes sont gelés dans `experiment.json`. Tarif Standard de contexte court relu le 8 octobre : entrée 10 USD, entrée en cache 1 USD, écriture cache 12,50 USD, sortie 50 USD par million de tokens. Le budget cumulé de 10 USD HT inclut les 0,41792 USD calculés précédemment ; chaque appel réserve une borne en octets UTF-8 plus 1 024 tokens d’encadrement et sa sortie maximale. Si le plan ne tient pas dans le solde, aucun appel ne part. Arrêt au premier échec technique, changement de modèle ou coût inconnu ; aucune reprise automatique. Toute sortie incomplète reste publiée comme telle.
+
+**Portée.** Simulation lexicale contrôlée, pas test de Google, du RAG d’un fournisseur ou de fréquence de citation web. Les résultats restent ventilés par cas, langue et mode ; trois répétitions ne donnent pas un taux stable. Un second fournisseur peut réexécuter le protocole dans une série distincte quand son accès est autorisé ; son absence n’est jamais présentée comme une comparaison accomplie. Aucun contrôle humain bloquant. Clés, en-têtes d’authentification et données de compte restent privés.
+
+## English
+
+**Question and corpus.** With the same six sentences in different orders, which conditions does this local retriever supply, and which extracts does the model subsequently cite? Use all three existing bilingual teaching cases from corpus 0.2. A/B reuse the published permutations. Fact IDs stay stable across positions. Publish null and adverse findings. This small authored corpus is not representative of the web.
+
+**Main retrieval.** Split into consecutive, non-overlapping groups of three sentences. Rank by the number of distinct question terms occurring in each chunk divided by the square root of its term count. Case/accent normalization and stopwords are frozen in code. Select one chunk; break ties by source order. No embeddings or web search. Give the model only selected sentences, fact IDs and the source name. This transparent lexical rule does not emulate a search engine.
+
+**Control and sensitivity.** Recollect the complete six-sentence passage under the same instructions and model parameters. Three cases × two languages × two variants × two modes × three repetitions = **72 independent calls**. Alternate variant/mode order without claiming randomization. Separately publish all retrieval-only combinations of chunk sizes two/three and top-k one/two. No generation is performed for that sensitivity matrix; do not cherry-pick its most favorable setting.
+
+**Measures and collection.** Measure source-condition availability by exact fact ID before generation. Then record IDs accompanied by a verbatim substring in supplied evidence, invalid citations, raw answers, completeness, errors and usage. Verbatim evidence does not establish semantic support for the whole answer. Historical checker 0.1 findings are secondary diagnostics only. No overall semantic fidelity score. OpenAI Responses API, `gpt-6-astra`, medium reasoning, 1,200 output-token ceiling including reasoning, default service tier, no tools or stored conversation. Freeze the complete plan and file hashes before collecting. Cumulative USD 10 before-tax ceiling includes prior USD 0.41792; reserve conservative input and maximum output costs. Stop at the first technical failure, changed model or unknown cost. No automatic retry; retain incomplete answers.
+
+**Limits.** This is a controlled lexical simulation, not Google, a provider’s retrieval system or a web citation probability test. Report case/language/mode separately. Three repetitions do not estimate stable rates. Another provider requires a separately recorded authorized series. No mandatory human gate; no credentials or private account data in public records.
+
+Sources: [corpus and original report](../RESULTS.md), [OpenAI model](https://developers.openai.com/api/docs/models/gpt-6-astra), [pricing](https://developers.openai.com/api/docs/pricing). Code MIT; authored material CC BY 4.0, as in the parent lab.

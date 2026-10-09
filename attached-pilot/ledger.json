@@ -1,0 +1,278 @@
+[
+  {
+    "run_id": "attached-v1-price-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.129388,
+    "started_at": "2026-10-08T20:08:10.516Z",
+    "settled_cost_usd": 0.04372
+  },
+  {
+    "run_id": "attached-v1-price-fr-grouped-full-r1",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:08:27.375Z",
+    "settled_cost_usd": 0.05412
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-full-r1",
+    "reserved_usd": 0.138813,
+    "started_at": "2026-10-08T20:08:50.866Z",
+    "settled_cost_usd": 0.05501
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-retrieved-r1",
+    "reserved_usd": 0.1355,
+    "started_at": "2026-10-08T20:09:09.148Z",
+    "settled_cost_usd": 0.05321
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.129088,
+    "started_at": "2026-10-08T20:09:31.148Z",
+    "settled_cost_usd": 0.03566
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-full-r1",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:09:45.728Z",
+    "settled_cost_usd": 0.04487
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-retrieved-r1",
+    "reserved_usd": 0.133925,
+    "started_at": "2026-10-08T20:10:01.065Z",
+    "settled_cost_usd": 0.037
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-full-r1",
+    "reserved_usd": 0.13675,
+    "started_at": "2026-10-08T20:10:15.190Z",
+    "settled_cost_usd": 0.04043
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-full-r1",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:10:32.213Z",
+    "settled_cost_usd": 0.03905
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-retrieved-r1",
+    "reserved_usd": 0.127688,
+    "started_at": "2026-10-08T20:10:47.531Z",
+    "settled_cost_usd": 0.03112
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-retrieved-r1",
+    "reserved_usd": 0.128163,
+    "started_at": "2026-10-08T20:10:58.698Z",
+    "settled_cost_usd": 0.03842
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-full-r1",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:11:14.864Z",
+    "settled_cost_usd": 0.04205
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-full-r2",
+    "reserved_usd": 0.138813,
+    "started_at": "2026-10-08T20:11:30.485Z",
+    "settled_cost_usd": 0.04326
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-retrieved-r2",
+    "reserved_usd": 0.1355,
+    "started_at": "2026-10-08T20:11:45.168Z",
+    "settled_cost_usd": 0.04421
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.129088,
+    "started_at": "2026-10-08T20:11:59.417Z",
+    "settled_cost_usd": 0.03461
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-full-r2",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:12:12.139Z",
+    "settled_cost_usd": 0.04707
+  },
+  {
+    "run_id": "attached-v1-price-fr-grouped-full-r2",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:12:28.399Z",
+    "settled_cost_usd": 0.04387
+  },
+  {
+    "run_id": "attached-v1-price-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.129388,
+    "started_at": "2026-10-08T20:12:46.500Z",
+    "settled_cost_usd": 0.04292
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-full-r2",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:13:03.073Z",
+    "settled_cost_usd": 0.0422
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-retrieved-r2",
+    "reserved_usd": 0.127688,
+    "started_at": "2026-10-08T20:13:25.504Z",
+    "settled_cost_usd": 0.03692
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-retrieved-r2",
+    "reserved_usd": 0.128163,
+    "started_at": "2026-10-08T20:13:39.661Z",
+    "settled_cost_usd": 0.04122
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-full-r2",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:13:55.391Z",
+    "settled_cost_usd": 0.0406
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-full-r2",
+    "reserved_usd": 0.13675,
+    "started_at": "2026-10-08T20:14:10.422Z",
+    "settled_cost_usd": 0.03838
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-retrieved-r2",
+    "reserved_usd": 0.133925,
+    "started_at": "2026-10-08T20:14:25.938Z",
+    "settled_cost_usd": 0.03795
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.129088,
+    "started_at": "2026-10-08T20:14:39.699Z",
+    "settled_cost_usd": 0.03266
+  },
+  {
+    "run_id": "attached-v1-price-fr-distributed-full-r3",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:14:51.679Z",
+    "settled_cost_usd": 0.04987
+  },
+  {
+    "run_id": "attached-v1-price-fr-grouped-full-r3",
+    "reserved_usd": 0.1327,
+    "started_at": "2026-10-08T20:15:08.937Z",
+    "settled_cost_usd": 0.04497
+  },
+  {
+    "run_id": "attached-v1-price-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.129388,
+    "started_at": "2026-10-08T20:15:27.281Z",
+    "settled_cost_usd": 0.05797
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-retrieved-r3",
+    "reserved_usd": 0.1355,
+    "started_at": "2026-10-08T20:15:51.664Z",
+    "settled_cost_usd": 0.04271
+  },
+  {
+    "run_id": "attached-v1-price-fr-attached-full-r3",
+    "reserved_usd": 0.138813,
+    "started_at": "2026-10-08T20:16:07.514Z",
+    "settled_cost_usd": 0.04941
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-retrieved-r3",
+    "reserved_usd": 0.128163,
+    "started_at": "2026-10-08T20:16:24.579Z",
+    "settled_cost_usd": 0.04162
+  },
+  {
+    "run_id": "attached-v1-price-en-grouped-full-r3",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:16:41.343Z",
+    "settled_cost_usd": 0.0379
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-full-r3",
+    "reserved_usd": 0.13675,
+    "started_at": "2026-10-08T20:16:54.942Z",
+    "settled_cost_usd": 0.03873
+  },
+  {
+    "run_id": "attached-v1-price-en-attached-retrieved-r3",
+    "reserved_usd": 0.133925,
+    "started_at": "2026-10-08T20:17:10.959Z",
+    "settled_cost_usd": 0.036
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-retrieved-r3",
+    "reserved_usd": 0.127688,
+    "started_at": "2026-10-08T20:17:24.883Z",
+    "settled_cost_usd": 0.02762
+  },
+  {
+    "run_id": "attached-v1-price-en-distributed-full-r3",
+    "reserved_usd": 0.130988,
+    "started_at": "2026-10-08T20:17:35.739Z",
+    "settled_cost_usd": 0.043
+  },
+  {
+    "run_id": "attached-v1-time-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.128738,
+    "started_at": "2026-10-08T20:17:53.703Z",
+    "settled_cost_usd": 0.03379
+  },
+  {
+    "run_id": "attached-v1-time-fr-grouped-full-r1",
+    "reserved_usd": 0.1317,
+    "started_at": "2026-10-08T20:18:07.098Z",
+    "settled_cost_usd": 0.0353
+  },
+  {
+    "run_id": "attached-v1-time-fr-attached-full-r1",
+    "reserved_usd": 0.141613,
+    "started_at": "2026-10-08T20:18:19.672Z",
+    "settled_cost_usd": 0.06072
+  },
+  {
+    "run_id": "attached-v1-time-fr-attached-retrieved-r1",
+    "reserved_usd": 0.13105,
+    "started_at": "2026-10-08T20:18:41.893Z",
+    "settled_cost_usd": 0.04406
+  },
+  {
+    "run_id": "attached-v1-time-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.127425,
+    "started_at": "2026-10-08T20:18:58.425Z",
+    "settled_cost_usd": 0.02156
+  },
+  {
+    "run_id": "attached-v1-time-fr-distributed-full-r1",
+    "reserved_usd": 0.1317,
+    "started_at": "2026-10-08T20:19:08.072Z",
+    "settled_cost_usd": 0.0438
+  },
+  {
+    "run_id": "attached-v1-time-en-attached-retrieved-r1",
+    "reserved_usd": 0.1289,
+    "started_at": "2026-10-08T20:19:25.221Z",
+    "settled_cost_usd": 0.03539
+  },
+  {
+    "run_id": "attached-v1-time-en-attached-full-r1",
+    "reserved_usd": 0.138138,
+    "started_at": "2026-10-08T20:19:39.338Z",
+    "settled_cost_usd": 0.03348
+  },
+  {
+    "run_id": "attached-v1-time-en-distributed-full-r1",
+    "reserved_usd": 0.129713,
+    "started_at": "2026-10-08T20:19:52.971Z",
+    "settled_cost_usd": 0.0419
+  },
+  {
+    "run_id": "attached-v1-time-en-distributed-retrieved-r1",
+    "reserved_usd": 0.125813,
+    "started_at": "2026-10-08T20:20:14.591Z",
+    "settled_cost_usd": null
+  }
+]

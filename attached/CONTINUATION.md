@@ -1,0 +1,5 @@
+# Continuation after a transport interruption
+
+Frozen before continuation on 9 October 2026. The first neutral-protocol request failed without a recorded HTTP response. Its cause and billing remain unknown. It is preserved in transport-interruption/, reserved at USD 0.129925, and **will not be retried**. This continuation uses the other 107 requests from the original frozen plan without changing their bodies or order. Successful-response denominators exclude the failed run; the 108-planned total keeps it. No claim of 108 complete responses is permitted.
+
+The execution environment is permitted network access for the continuation. Transport failures additionally record only error name/cause code, never headers or credentials. Any further failed or unknown-usage request again stops execution. Prior known costs are USD 3.295030; the two unsettled calls reserve USD 0.255738, giving USD 3.550768 charged against the unchanged cumulative budget before continuation. Original protocol, requests, collector, prior results and retriever remain unchanged. The continuation plan pins this collector by SHA-256.

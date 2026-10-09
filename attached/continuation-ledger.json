@@ -1,0 +1,644 @@
+[
+  {
+    "run_id": "attached-v2-price-fr-grouped-full-r1",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:08:59.818Z",
+    "settled_cost_usd": 0.04968
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-full-r1",
+    "reserved_usd": 0.13935,
+    "started_at": "2026-10-09T01:09:16.949Z",
+    "settled_cost_usd": 0.04512
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-retrieved-r1",
+    "reserved_usd": 0.136038,
+    "started_at": "2026-10-09T01:09:34.776Z",
+    "settled_cost_usd": 0.06742
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.129625,
+    "started_at": "2026-10-09T01:10:00.185Z",
+    "settled_cost_usd": 0.03687
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-full-r1",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:10:13.053Z",
+    "settled_cost_usd": 0.04048
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-retrieved-r1",
+    "reserved_usd": 0.134438,
+    "started_at": "2026-10-09T01:10:25.630Z",
+    "settled_cost_usd": 0.03675
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-full-r1",
+    "reserved_usd": 0.137263,
+    "started_at": "2026-10-09T01:10:38.038Z",
+    "settled_cost_usd": 0.03533
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-full-r1",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:10:50.365Z",
+    "settled_cost_usd": 0.0391
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-retrieved-r1",
+    "reserved_usd": 0.1282,
+    "started_at": "2026-10-09T01:11:05.479Z",
+    "settled_cost_usd": 0.03862
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-retrieved-r1",
+    "reserved_usd": 0.128675,
+    "started_at": "2026-10-09T01:11:19.733Z",
+    "settled_cost_usd": 0.03297
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-full-r1",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:11:32.821Z",
+    "settled_cost_usd": 0.04295
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-full-r2",
+    "reserved_usd": 0.13935,
+    "started_at": "2026-10-09T01:11:51.413Z",
+    "settled_cost_usd": 0.04562
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-retrieved-r2",
+    "reserved_usd": 0.136038,
+    "started_at": "2026-10-09T01:12:07.390Z",
+    "settled_cost_usd": 0.05252
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.129625,
+    "started_at": "2026-10-09T01:12:25.256Z",
+    "settled_cost_usd": 0.04237
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-full-r2",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:12:42.036Z",
+    "settled_cost_usd": 0.04013
+  },
+  {
+    "run_id": "attached-v2-price-fr-grouped-full-r2",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:12:55.754Z",
+    "settled_cost_usd": 0.04153
+  },
+  {
+    "run_id": "attached-v2-price-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.129925,
+    "started_at": "2026-10-09T01:13:11.692Z",
+    "settled_cost_usd": 0.05093
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-full-r2",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:13:34.222Z",
+    "settled_cost_usd": 0.0346
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-retrieved-r2",
+    "reserved_usd": 0.1282,
+    "started_at": "2026-10-09T01:13:47.183Z",
+    "settled_cost_usd": 0.03552
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-retrieved-r2",
+    "reserved_usd": 0.128675,
+    "started_at": "2026-10-09T01:14:00.597Z",
+    "settled_cost_usd": 0.03412
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-full-r2",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:14:12.327Z",
+    "settled_cost_usd": 0.03905
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-full-r2",
+    "reserved_usd": 0.137263,
+    "started_at": "2026-10-09T01:14:28.519Z",
+    "settled_cost_usd": 0.03803
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-retrieved-r2",
+    "reserved_usd": 0.134438,
+    "started_at": "2026-10-09T01:14:41.781Z",
+    "settled_cost_usd": 0.03575
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.129625,
+    "started_at": "2026-10-09T01:14:53.920Z",
+    "settled_cost_usd": 0.03517
+  },
+  {
+    "run_id": "attached-v2-price-fr-distributed-full-r3",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:15:05.342Z",
+    "settled_cost_usd": 0.05163
+  },
+  {
+    "run_id": "attached-v2-price-fr-grouped-full-r3",
+    "reserved_usd": 0.133238,
+    "started_at": "2026-10-09T01:15:23.628Z",
+    "settled_cost_usd": 0.05353
+  },
+  {
+    "run_id": "attached-v2-price-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.129925,
+    "started_at": "2026-10-09T01:15:42.902Z",
+    "settled_cost_usd": 0.04063
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-retrieved-r3",
+    "reserved_usd": 0.136038,
+    "started_at": "2026-10-09T01:15:58.200Z",
+    "settled_cost_usd": 0.04487
+  },
+  {
+    "run_id": "attached-v2-price-fr-attached-full-r3",
+    "reserved_usd": 0.13935,
+    "started_at": "2026-10-09T01:16:13.009Z",
+    "settled_cost_usd": 0.05177
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-retrieved-r3",
+    "reserved_usd": 0.128675,
+    "started_at": "2026-10-09T01:16:31.791Z",
+    "settled_cost_usd": 0.03852
+  },
+  {
+    "run_id": "attached-v2-price-en-grouped-full-r3",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:16:45.491Z",
+    "settled_cost_usd": 0.0371
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-full-r3",
+    "reserved_usd": 0.137263,
+    "started_at": "2026-10-09T01:16:58.980Z",
+    "settled_cost_usd": 0.03483
+  },
+  {
+    "run_id": "attached-v2-price-en-attached-retrieved-r3",
+    "reserved_usd": 0.134438,
+    "started_at": "2026-10-09T01:17:10.118Z",
+    "settled_cost_usd": 0.03685
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-retrieved-r3",
+    "reserved_usd": 0.1282,
+    "started_at": "2026-10-09T01:17:23.486Z",
+    "settled_cost_usd": 0.04167
+  },
+  {
+    "run_id": "attached-v2-price-en-distributed-full-r3",
+    "reserved_usd": 0.1315,
+    "started_at": "2026-10-09T01:17:38.689Z",
+    "settled_cost_usd": 0.0431
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.129313,
+    "started_at": "2026-10-09T01:17:54.821Z",
+    "settled_cost_usd": 0.03044
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-full-r1",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:18:03.857Z",
+    "settled_cost_usd": 0.03965
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-full-r1",
+    "reserved_usd": 0.142188,
+    "started_at": "2026-10-09T01:18:20.720Z",
+    "settled_cost_usd": 0.04652
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-retrieved-r1",
+    "reserved_usd": 0.131625,
+    "started_at": "2026-10-09T01:18:35.389Z",
+    "settled_cost_usd": 0.04451
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.128,
+    "started_at": "2026-10-09T01:18:50.898Z",
+    "settled_cost_usd": 0.02801
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-full-r1",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:19:01.302Z",
+    "settled_cost_usd": 0.0357
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-retrieved-r1",
+    "reserved_usd": 0.1294,
+    "started_at": "2026-10-09T01:19:13.662Z",
+    "settled_cost_usd": 0.03545
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-full-r1",
+    "reserved_usd": 0.138638,
+    "started_at": "2026-10-09T01:19:27.025Z",
+    "settled_cost_usd": 0.03724
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-full-r1",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:19:39.915Z",
+    "settled_cost_usd": 0.04261
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-retrieved-r1",
+    "reserved_usd": 0.126313,
+    "started_at": "2026-10-09T01:19:56.814Z",
+    "settled_cost_usd": 0.02474
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-retrieved-r1",
+    "reserved_usd": 0.127663,
+    "started_at": "2026-10-09T01:20:04.799Z",
+    "settled_cost_usd": 0.0401
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-full-r1",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:20:19.159Z",
+    "settled_cost_usd": 0.03261
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-full-r2",
+    "reserved_usd": 0.142188,
+    "started_at": "2026-10-09T01:20:30.323Z",
+    "settled_cost_usd": 0.04627
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-retrieved-r2",
+    "reserved_usd": 0.131625,
+    "started_at": "2026-10-09T01:20:45.599Z",
+    "settled_cost_usd": 0.04456
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.128,
+    "started_at": "2026-10-09T01:21:01.274Z",
+    "settled_cost_usd": 0.02681
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-full-r2",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:21:09.982Z",
+    "settled_cost_usd": 0.04085
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-full-r2",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:21:23.478Z",
+    "settled_cost_usd": 0.04495
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.129313,
+    "started_at": "2026-10-09T01:21:40.401Z",
+    "settled_cost_usd": 0.03994
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-full-r2",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:21:53.287Z",
+    "settled_cost_usd": 0.03171
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-retrieved-r2",
+    "reserved_usd": 0.126313,
+    "started_at": "2026-10-09T01:22:04.885Z",
+    "settled_cost_usd": 0.02839
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-retrieved-r2",
+    "reserved_usd": 0.127663,
+    "started_at": "2026-10-09T01:22:13.598Z",
+    "settled_cost_usd": 0.03565
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-full-r2",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:22:25.379Z",
+    "settled_cost_usd": 0.04241
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-full-r2",
+    "reserved_usd": 0.138638,
+    "started_at": "2026-10-09T01:22:40.155Z",
+    "settled_cost_usd": 0.03634
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-retrieved-r2",
+    "reserved_usd": 0.1294,
+    "started_at": "2026-10-09T01:22:52.217Z",
+    "settled_cost_usd": 0.0318
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.128,
+    "started_at": "2026-10-09T01:23:02.865Z",
+    "settled_cost_usd": 0.02931
+  },
+  {
+    "run_id": "attached-v2-time-fr-distributed-full-r3",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:23:14.824Z",
+    "settled_cost_usd": 0.03975
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-full-r3",
+    "reserved_usd": 0.132275,
+    "started_at": "2026-10-09T01:23:29.642Z",
+    "settled_cost_usd": 0.04295
+  },
+  {
+    "run_id": "attached-v2-time-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.129313,
+    "started_at": "2026-10-09T01:23:44.652Z",
+    "settled_cost_usd": 0.03434
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-retrieved-r3",
+    "reserved_usd": 0.131625,
+    "started_at": "2026-10-09T01:23:56.986Z",
+    "settled_cost_usd": 0.03976
+  },
+  {
+    "run_id": "attached-v2-time-fr-attached-full-r3",
+    "reserved_usd": 0.142188,
+    "started_at": "2026-10-09T01:24:11.442Z",
+    "settled_cost_usd": 0.05437
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-retrieved-r3",
+    "reserved_usd": 0.127663,
+    "started_at": "2026-10-09T01:24:30.976Z",
+    "settled_cost_usd": 0.02765
+  },
+  {
+    "run_id": "attached-v2-time-en-grouped-full-r3",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:24:39.901Z",
+    "settled_cost_usd": 0.03731
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-full-r3",
+    "reserved_usd": 0.138638,
+    "started_at": "2026-10-09T01:24:54.114Z",
+    "settled_cost_usd": 0.03364
+  },
+  {
+    "run_id": "attached-v2-time-en-attached-retrieved-r3",
+    "reserved_usd": 0.1294,
+    "started_at": "2026-10-09T01:25:05.696Z",
+    "settled_cost_usd": 0.0424
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-retrieved-r3",
+    "reserved_usd": 0.126313,
+    "started_at": "2026-10-09T01:25:21.243Z",
+    "settled_cost_usd": 0.03099
+  },
+  {
+    "run_id": "attached-v2-time-en-distributed-full-r3",
+    "reserved_usd": 0.130213,
+    "started_at": "2026-10-09T01:25:31.907Z",
+    "settled_cost_usd": 0.04316
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:25:49.188Z",
+    "settled_cost_usd": 0.02435
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-full-r1",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:25:57.605Z",
+    "settled_cost_usd": 0.02928
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-full-r1",
+    "reserved_usd": 0.1344,
+    "started_at": "2026-10-09T01:26:06.728Z",
+    "settled_cost_usd": 0.04308
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-retrieved-r1",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:26:20.365Z",
+    "settled_cost_usd": 0.032
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.128663,
+    "started_at": "2026-10-09T01:26:31.994Z",
+    "settled_cost_usd": 0.03118
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-full-r1",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:26:44.364Z",
+    "settled_cost_usd": 0.03338
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-retrieved-r1",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:26:55.551Z",
+    "settled_cost_usd": 0.02355
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-full-r1",
+    "reserved_usd": 0.1313,
+    "started_at": "2026-10-09T01:27:03.345Z",
+    "settled_cost_usd": 0.0296
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-full-r1",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:27:12.790Z",
+    "settled_cost_usd": 0.02903
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-retrieved-r1",
+    "reserved_usd": 0.12655,
+    "started_at": "2026-10-09T01:27:22.436Z",
+    "settled_cost_usd": 0.03227
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-retrieved-r1",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:27:33.763Z",
+    "settled_cost_usd": 0.02015
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-full-r1",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:27:39.918Z",
+    "settled_cost_usd": 0.02903
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-full-r2",
+    "reserved_usd": 0.1344,
+    "started_at": "2026-10-09T01:27:49.228Z",
+    "settled_cost_usd": 0.03453
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-retrieved-r2",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:28:01.824Z",
+    "settled_cost_usd": 0.02525
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.128663,
+    "started_at": "2026-10-09T01:28:10.674Z",
+    "settled_cost_usd": 0.03093
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-full-r2",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:28:22.267Z",
+    "settled_cost_usd": 0.03363
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-full-r2",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:28:34.136Z",
+    "settled_cost_usd": 0.02923
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:28:42.981Z",
+    "settled_cost_usd": 0.0276
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-full-r2",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:28:52.707Z",
+    "settled_cost_usd": 0.02923
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-retrieved-r2",
+    "reserved_usd": 0.12655,
+    "started_at": "2026-10-09T01:29:03.430Z",
+    "settled_cost_usd": 0.02892
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-retrieved-r2",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:29:13.387Z",
+    "settled_cost_usd": 0.02145
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-full-r2",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:29:18.935Z",
+    "settled_cost_usd": 0.02948
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-full-r2",
+    "reserved_usd": 0.1313,
+    "started_at": "2026-10-09T01:29:28.481Z",
+    "settled_cost_usd": 0.0307
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-retrieved-r2",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:29:38.029Z",
+    "settled_cost_usd": 0.01985
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.128663,
+    "started_at": "2026-10-09T01:29:43.684Z",
+    "settled_cost_usd": 0.03068
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-distributed-full-r3",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:29:55.496Z",
+    "settled_cost_usd": 0.03023
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-full-r3",
+    "reserved_usd": 0.13185,
+    "started_at": "2026-10-09T01:30:04.775Z",
+    "settled_cost_usd": 0.03183
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:30:14.529Z",
+    "settled_cost_usd": 0.03215
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-retrieved-r3",
+    "reserved_usd": 0.12835,
+    "started_at": "2026-10-09T01:30:25.997Z",
+    "settled_cost_usd": 0.0321
+  },
+  {
+    "run_id": "attached-v2-hosting-fr-attached-full-r3",
+    "reserved_usd": 0.1344,
+    "started_at": "2026-10-09T01:30:38.922Z",
+    "settled_cost_usd": 0.04153
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-retrieved-r3",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:30:51.419Z",
+    "settled_cost_usd": 0.0219
+  },
+  {
+    "run_id": "attached-v2-hosting-en-grouped-full-r3",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:30:58.558Z",
+    "settled_cost_usd": 0.03398
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-full-r3",
+    "reserved_usd": 0.1313,
+    "started_at": "2026-10-09T01:31:09.985Z",
+    "settled_cost_usd": 0.03115
+  },
+  {
+    "run_id": "attached-v2-hosting-en-attached-retrieved-r3",
+    "reserved_usd": 0.126375,
+    "started_at": "2026-10-09T01:31:19.992Z",
+    "settled_cost_usd": 0.02595
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-retrieved-r3",
+    "reserved_usd": 0.12655,
+    "started_at": "2026-10-09T01:31:28.141Z",
+    "settled_cost_usd": 0.02907
+  },
+  {
+    "run_id": "attached-v2-hosting-en-distributed-full-r3",
+    "reserved_usd": 0.129163,
+    "started_at": "2026-10-09T01:31:37.029Z",
+    "settled_cost_usd": 0.03928
+  }
+]

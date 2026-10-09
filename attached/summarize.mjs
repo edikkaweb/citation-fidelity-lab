@@ -1,0 +1,63 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';import {resolve} from 'node:path';import {fileURLToPath} from 'node:url';
+import {cases,supplied} from './corpus.mjs';import {inspect,normalize} from './measure.mjs';
+const here=new URL('.',import.meta.url),get=async f=>JSON.parse(await readFile(new URL(f,here))),round=x=>Number(x.toFixed(8));
+export function summarize(data){
+ const groups=[];
+ for(const c of cases)for(const language of ['fr','en'])for(const mode of ['retrieved','full'])for(const variant of ['distributed','grouped','attached']){
+  const runs=data.runs.filter(r=>r.case_id===c.id&&r.language===language&&r.mode===mode&&r.variant===variant),valid=runs.filter(r=>r.complete&&inspect(r.parsed_output,r.sentences).valid_shape),checks=valid.flatMap(r=>inspect(r.parsed_output,r.sentences).conditions.map(c=>{const sentence=r.sentences.find(s=>s.sentence_id===c.sentence_id),quote=normalize(c.quote);return {...c,exact_quote_valid:Boolean(sentence&&quote.length>=16&&normalize(sentence.text).includes(quote)),condition_association_valid:Boolean(sentence?.condition_ids.includes(c.condition_id))};}));
+  groups.push({case_id:c.id,language,mode,variant,planned:3,attempted:runs.length,complete:valid.length,provided_condition_ids:supplied(c,language,variant,mode).provided_condition_ids,absent_opportunities:checks.filter(c=>!c.provided).length,correct_unavailable:checks.filter(c=>c.correct_unavailable).length,false_available:checks.filter(c=>c.false_available).length,false_unavailable:checks.filter(c=>c.false_unavailable).length,available_opportunities:checks.filter(c=>c.provided).length,declared_available:checks.filter(c=>c.declared==='available').length,invalid_available_evidence:checks.filter(c=>c.declared==='available'&&!c.exact_supplied_evidence).length,non_exact_quotes:checks.filter(c=>c.declared==='available'&&!c.exact_quote_valid).length,association_mismatches:checks.filter(c=>c.declared==='available'&&c.exact_quote_valid&&!c.condition_association_valid).length,inconsistent_declarations:checks.filter(c=>!c.declaration_consistent).length,runs:runs.map(r=>r.run_id)});
+ }
+ const sensitivity=[];for(const c of cases)for(const language of ['fr','en'])for(const variant of ['distributed','grouped','attached'])for(const size of [2,3])for(const topK of [1,2]){const r=supplied(c,language,variant,'retrieved',{size,topK});sensitivity.push({case_id:c.id,language,variant,size,topK,provided_condition_ids:r.provided_condition_ids,selected_chunk_ids:r.retrieval.selected_chunk_ids});}
+ const keys=['absent_opportunities','correct_unavailable','false_available','false_unavailable','available_opportunities','declared_available','invalid_available_evidence','inconsistent_declarations','non_exact_quotes','association_mismatches'];
+ return {schema_version:1,counts:data.counts,known_series_cost_usd:data.estimated_cost_usd,known_cumulative_cost_usd:data.known_cumulative_cost_usd,unsettled_reserved_usd:data.unsettled_reserved_usd,charged_cumulative_upper_bound_usd:data.charged_cumulative_upper_bound_usd,totals:Object.fromEntries(keys.map(k=>[k,groups.reduce((s,g)=>s+g[k],0)])),groups,sensitivity,semantic_fidelity_score:null,spontaneous_missingness_score:null,cross_provider_comparison:false};
+}
+export async function build(){
+ const original=await get('experiment.json'),first=await get('transport-interruption/results.json'),continued=await get('continuation-results.json'),ledger=await get('continuation-ledger.json');if(continued.status==='collecting')throw Error('Wait for final collection');
+ const all=[...first.runs,...continued.runs];if(new Set(all.map(r=>r.run_id)).size!==all.length)throw Error('Duplicate run');
+ const planned=new Set(original.runs.map(r=>r.run_id));if(all.some(r=>!planned.has(r.run_id)))throw Error('Unexpected run');
+ const extra=ledger.filter(r=>r.settled_cost_usd===null).reduce((s,r)=>s+r.reserved_usd,0),cost=round(all.reduce((s,r)=>s+(r.estimated_cost_usd??0),0)),reserved=round(0.255738+extra);
+ const data={schema_version:1,experiment_id:original.experiment_id,status:'final',experiment_sha256:createHash('sha256').update(await readFile(new URL('experiment.json',here))).digest('hex'),started_at:first.started_at,ended_at:continued.ended_at,planned_count:108,counts:{attempted:all.length,complete:all.filter(r=>r.complete).length,failed:all.filter(r=>r.http_status!==200).length,incomplete:all.filter(r=>r.http_status===200&&!r.complete).length,unattempted:108-all.length},estimated_cost_usd:cost,known_cumulative_cost_usd:round(3.29503+cost),unsettled_reserved_usd:reserved,charged_cumulative_upper_bound_usd:round(3.29503+cost+reserved),cost_note:'Known cumulative amount includes separate historical series and biased pilot; unresolved requests retain maximum reservations. Estimates, not invoice. Audio excluded.',stopped_reason:continued.stopped_reason,runs:all};
+ const summary=summarize(data);await writeFile(new URL('results.json',here),JSON.stringify(data,null,2)+'\n');await writeFile(new URL('summary.json',here),JSON.stringify(summary,null,2)+'\n');
+ const t=summary.totals,header='| Case | Lang | Input | Variant | Supplied | Complete / planned | Missing correctly declared / absent | Available against coding | Unavailable against coding | Combined evidence failures / available declarations |\n|---|---|---|---|---|---|---|---|---|---|';
+ const table=summary.groups.map(g=>`| ${g.case_id} | ${g.language} | ${g.mode} | ${{distributed:'A',grouped:'B',attached:'C'}[g.variant]} | ${g.provided_condition_ids.length}/4 | ${g.complete}/3 | ${g.correct_unavailable}/${g.absent_opportunities} | ${g.false_available} | ${g.false_unavailable} | ${g.invalid_available_evidence}/${g.declared_available} |`).join('\n');
+ const report=`# Attached conditions / Conditions attachées · results
+
+[Protocol](PROTOCOL.md) · [Frozen plan](experiment.json) · [Transport continuation](CONTINUATION.md) · [All responses](results.json) · [Summary](summary.json) · [Explorer](https://edikkaweb.github.io/citation-fidelity-lab/attached/) · [Your text](https://edikkaweb.github.io/citation-fidelity-lab/workbench/)
+
+## Français
+
+**C conserve 4/4 conditions pour le prix et le délai, mais seulement 1/4 pour l’hébergement.** Ces comptes décrivent les conditions fournies avant génération, avec trois phrases par fragment et un fragment retenu. A donne respectivement 2/4, 1/4, 3/4 ; B donne 3/4, 3/4, 1/4. Les résultats sont identiques en FR/EN. Chaque témoin complet fournit 4/4.
+
+C remplace les phrases-chiffres (et l’affirmation principale d’hébergement) par une phrase autonome portant les quatre conditions. Elle change aussi la longueur et répète des informations. Notre découpeur garde chaque phrase entière : le transport conjoint des conditions est donc en partie mécanique. **Ce n’est pas une règle GEO universelle démontrée.** Le mauvais résultat hébergement est conservé ; aucun réglage favorable n’est sélectionné après coup. Les 72 réglages de sensibilité sont dans la synthèse, sans appel de modèle supplémentaire.
+
+**Absences déclarées.** Sur ${t.absent_opportunities} occasions où un identifiant de condition était absent de l’entrée selon le codage préalable des réponses complètes, ${t.correct_unavailable} déclarations la signalent comme indisponible ; ${t.false_available} la déclarent disponible contrairement à ce codage. Parmi ${t.available_opportunities} conditions fournies, ${t.false_unavailable} sont déclarées absentes. ${t.inconsistent_declarations} déclarations contredisent leur liste « indisponibles ». La consigne demande explicitement ce diagnostic : ce résultat ne mesure pas un comportement spontané et ne constitue pas un taux d’hallucination du texte libre.
+
+**Extraits.** ${t.non_exact_quotes}/${t.declared_available} extraits ne sont pas des sous-chaînes exactes valides. ${t.association_mismatches} autres déclarations ont un extrait exact, mais provenant d’une phrase non associée à la condition dans le codage préalable. Le contrôle combiné relève ${t.invalid_available_evidence}/${t.declared_available} preuves non validées. Le contrôle impose un identifiant fourni, une association condition/phrase prédéfinie et une sous-chaîne d’au moins 16 caractères, espaces normalisés. Il ne garantit pas que l’extrait soutient sémantiquement toute la réponse.
+
+**Limite du diagnostic.** Les catégories peuvent se recouper. Dans les trois essais prix EN/A/récupéré, F3 est déclarée disponible en citant le périmètre de S2, alors que la réponse dit que le bilingue et le CRM ne sont pas précisés. Une discordance au codage n’est donc pas à elle seule une invention ni un échec à signaler le manque dans le texte libre. Aucun taux de fidélité sémantique n’est déduit. [Note de lecture](MEASUREMENT-NOTE.md).
+
+**Collecte :** ${data.counts.attempted}/108 tentés, ${data.counts.complete} complets, ${data.counts.failed} échecs, ${data.counts.incomplete} incomplets, ${data.counts.unattempted} non tentés. Le premier appel a échoué au transport, usage inconnu, sans réessai. Les 107 appels restants ont leur plan de continuation figé. Le pilote de 45 réponses et un appel interrompu reste [archivé séparément](../attached-pilot/ERRATUM.md) : ses libellés révélaient des parties des conditions. Aucun de ses résultats n’entre dans les dénominateurs ci-dessus.
+
+**Coûts USD HT estimés :** ${cost} connus pour cette série ; ${data.known_cumulative_cost_usd} connus pour toutes les séries, pilote compris. Réserves pour usages incertains : ${reserved}. Montant imputé au plafond avant audio : ${data.charged_cumulative_upper_bound_usd}. Les réserves ne sont pas présentées comme une facture. Un seul fournisseur ; Claude n’a pas été testé.
+
+## English
+
+**C supplies 4/4 conditions for price and duration, but only 1/4 for hosting.** These are input availability counts under the frozen three-sentence, top-one retriever, equal in both languages. A supplies 2/4, 1/4, 3/4 and B supplies 3/4, 3/4, 1/4 respectively. Every full-text control supplies 4/4. C also changes length and repetition. Sentences remain indivisible, making joint condition transport partly mechanical. No universal GEO writing rule or web citation uplift is established. All 72 retrieval-only sensitivity settings and the adverse hosting result are retained.
+
+Of ${t.absent_opportunities} condition opportunities absent under the prespecified coding in completed responses, ${t.correct_unavailable} are correctly declared unavailable and ${t.false_available} available contrary to the coding. Of ${t.available_opportunities} supplied conditions, ${t.false_unavailable} are falsely declared missing. ${t.inconsistent_declarations} availability statements conflict with their missing-condition list. This explicitly requested diagnostic does not measure spontaneous behaviour or semantic hallucination in the prose answer. ${t.non_exact_quotes}/${t.declared_available} quotes fail the exact substring check; ${t.association_mismatches} other quotes are exact but use a sentence not associated with that condition in the prespecified coding. Categories can overlap: all three price EN/A/retrieved answers flag missing bilingual/CRM coverage in prose while classifying F3 as available from a scope sentence. This is a coding discrepancy, not proof of hallucination. Substring checks do not certify entailment. See [measurement note](MEASUREMENT-NOTE.md).
+
+Collection: ${data.counts.attempted}/108 attempted, ${data.counts.complete} complete, ${data.counts.failed} failed, ${data.counts.incomplete} incomplete, ${data.counts.unattempted} unattempted. The initial transport failure is retained without retry; the remaining requests use a frozen continuation. The biased 45-response pilot is archived and excluded. One provider, no Claude comparison. Estimated known costs: USD ${cost} for this series, USD ${data.known_cumulative_cost_usd} for all series including pilot, plus USD ${reserved} in unresolved reservations; USD ${data.charged_cumulative_upper_bound_usd} charged against the budget before audio, not an invoice.
+
+## Every experimental condition / Toutes les conditions expérimentales
+
+Counts describe independent repetitions, not a robust population-rate estimate. Zero-denominator missing-condition groups are not evidence of missingness recognition.
+
+${header}
+${table}
+
+Recompute: \`node attached/summarize.mjs\`. Code MIT, authored material CC BY 4.0. Historical protocols and outputs remain separate and unchanged.
+`;
+ await writeFile(new URL('REPORT.md',here),report);return summary;
+}
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))console.log(JSON.stringify(await build()));

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "experiment_id": "attached-conditions-v2-20261008",
+  "experiment_sha256": "bf7f326626bcec6ecd809e2f09e0d3175143530b7acbbcb3cedc61c8e936d573",
+  "status": "stopped",
+  "started_at": "2026-10-08T20:21:31.844Z",
+  "planned_count": 108,
+  "prior_spent_usd": 3.420843,
+  "estimated_cost_usd": 0,
+  "cumulative_estimated_cost_usd": 3.420843,
+  "runs": [
+    {
+      "run_id": "attached-v2-price-fr-grouped-retrieved-r1",
+      "case_id": "price",
+      "language": "fr",
+      "variant": "grouped",
+      "mode": "retrieved",
+      "repetition": 1,
+      "question": "Le budget de refonte ciblée Edikka suffit-il pour un site bilingue avec une intégration métier CRM ?",
+      "source_url": "https://www.edikka.com/insights/strategie-digitale/prix-refonte-site-internet",
+      "sentences": [
+        {
+          "sentence_id": "S1",
+          "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT.",
+          "condition_ids": [
+            "F1"
+          ]
+        },
+        {
+          "sentence_id": "S2",
+          "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles.",
+          "condition_ids": [
+            "F2"
+          ]
+        },
+        {
+          "sentence_id": "S3",
+          "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé.",
+          "condition_ids": [
+            "F3"
+          ]
+        }
+      ],
+      "provided_condition_ids": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "retrieval": {
+        "size": 3,
+        "top_k": 1,
+        "ranked": [
+          {
+            "chunk_id": "C1",
+            "offset": 0,
+            "facts": [
+              {
+                "fact_id": "F1",
+                "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+              },
+              {
+                "fact_id": "F2",
+                "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+              },
+              {
+                "fact_id": "F3",
+                "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+              }
+            ],
+            "matching_terms": [
+              "refonte",
+              "ciblee",
+              "edikka",
+              "site",
+              "avec",
+              "integration",
+              "metier"
+            ],
+            "score": 1.1666666666666667
+          },
+          {
+            "chunk_id": "C2",
+            "offset": 3,
+            "facts": [
+              {
+                "fact_id": "F4",
+                "text": "Cette fourchette ne constitue ni une moyenne du marché français ni un devis automatique."
+              },
+              {
+                "fact_id": "F5",
+                "text": "Les prestations de refonte sont classées par niveau de complexité."
+              },
+              {
+                "fact_id": "F6",
+                "text": "Le budget final dépend du périmètre écrit et des responsabilités convenues."
+              }
+            ],
+            "matching_terms": [
+              "budget",
+              "refonte"
+            ],
+            "score": 0.42640143271122083
+          }
+        ],
+        "selected_chunk_ids": [
+          "C1"
+        ],
+        "facts": [
+          {
+            "fact_id": "F1",
+            "text": "La politique tarifaire Edikka du 20 août 2026 situe une refonte ciblée entre 5 000 et 9 999 € HT."
+          },
+          {
+            "fact_id": "F2",
+            "text": "Cette offre vise un parcours, une landing page stratégique ou un petit site limité à trois gabarits, avec des contenus disponibles."
+          },
+          {
+            "fact_id": "F3",
+            "text": "Le multilingue et une intégration métier spécifique sont exclus de ce périmètre ciblé."
+          }
+        ]
+      },
+      "started_at": "2026-10-08T20:21:31.845Z",
+      "ended_at": "2026-10-08T20:24:27.548Z",
+      "http_status": null,
+      "returned_model": null,
+      "response_id": null,
+      "response_status": null,
+      "complete": false,
+      "raw_output": "",
+      "parsed_output": null,
+      "answer": "",
+      "measurements": {
+        "valid_shape": false,
+        "conditions": []
+      },
+      "usage": null,
+      "estimated_cost_usd": null,
+      "error_type": "transport_error"
+    }
+  ],
+  "stopped_reason": "unknown_usage",
+  "ended_at": "2026-10-08T20:24:27.552Z",
+  "counts": {
+    "attempted": 1,
+    "complete": 0,
+    "incomplete": 0,
+    "failed": 1,
+    "unattempted": 107
+  }
+}

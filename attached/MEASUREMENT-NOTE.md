@@ -1,0 +1,11 @@
+# Interpretation note / Note d’interprétation · 9 October 2026
+
+Added during collection after inspecting completed responses; **no request, source, frozen measure or response is changed**. This note limits interpretation, not the inclusion of adverse results.
+
+FR — Le champ `false_available` signifie « disponible déclaré pour un identifiant absent selon la table condition/phrase préenregistrée ». Les catégories demandées sont plus larges que certains faits précis. F3 prix (« prestations incluses ou exclues ») peut être renseignée partiellement par S2 (périmètre), alors que la table réserve F3 à la phrase d’exclusions. Les trois réponses prix EN/A/récupéré citent ainsi S2 pour F3 tout en disant dans leur réponse que le bilingue et le CRM ne sont pas précisés. Pour le délai, le libellé de l’offre peut être pris comme un renseignement de périmètre sans fournir son détail.
+
+Ces écarts ne doivent pas être présentés comme des hallucinations ou comme une mesure sémantique d’échec à reconnaître un manque. Le diagnostic décrit une concordance avec un codage préalable, sous consigne explicite. L’examen exact des sous-chaînes est publié séparément de l’association attendue entre phrase et condition. Une association refusée n’implique pas que la citation a été inventée.
+
+EN — `false_available` means an available declaration for an ID absent under the prespecified condition/sentence mapping. Requested categories can be broader than the exact facts. Price F3 (“included or excluded services”) can be partially informed by scope sentence S2 even though the mapping reserves F3 for exclusions. All three price EN/A/retrieved answers cite S2 for F3 while explicitly saying bilingual/CRM coverage is unspecified. In duration, an offer label may be classified as scope information without supplying detailed scope.
+
+Do not present these mismatches as hallucinations or a semantic missingness-failure rate. This explicitly requested diagnostic measures agreement with a prespecified mapping. Exact substring validity is reported separately from expected sentence/condition association. A rejected association does not imply an invented quotation. Earlier frozen outputs remain intact; any narrower-category study would require a new protocol and budget.

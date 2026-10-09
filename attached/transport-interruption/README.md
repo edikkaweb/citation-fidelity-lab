@@ -1,0 +1,1 @@
+First neutral-protocol call stopped on a transport error before an HTTP response was recorded. Usage is unknown: USD 0.129925 remains reserved. No successful output, no automatic retry. The cause was not identified; authentication or quota failure is not established. Continuation skips this attempted run and preserves it in the denominator.

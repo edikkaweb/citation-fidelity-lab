@@ -1,0 +1,470 @@
+[
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.031812,
+    "started_at": "2026-10-09T05:23:45.598Z",
+    "settled_cost_usd": 0.00663
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-full-r1",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:23:50.468Z",
+    "settled_cost_usd": 0.007292
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-full-r1",
+    "reserved_usd": 0.034828,
+    "started_at": "2026-10-09T05:23:55.364Z",
+    "settled_cost_usd": 0.007886
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-retrieved-r1",
+    "reserved_usd": 0.033768,
+    "started_at": "2026-10-09T05:23:59.172Z",
+    "settled_cost_usd": 0.007414
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.031716,
+    "started_at": "2026-10-09T05:24:02.720Z",
+    "settled_cost_usd": 0.006716
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-full-r1",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:24:06.280Z",
+    "settled_cost_usd": 0.007302
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-retrieved-r1",
+    "reserved_usd": 0.033256,
+    "started_at": "2026-10-09T05:24:12.745Z",
+    "settled_cost_usd": 0.006886
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-full-r1",
+    "reserved_usd": 0.03416,
+    "started_at": "2026-10-09T05:24:16.064Z",
+    "settled_cost_usd": 0.007076
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-full-r1",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:24:19.525Z",
+    "settled_cost_usd": 0.006492
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-retrieved-r1",
+    "reserved_usd": 0.03126,
+    "started_at": "2026-10-09T05:24:25.938Z",
+    "settled_cost_usd": 0.006178
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-retrieved-r1",
+    "reserved_usd": 0.031412,
+    "started_at": "2026-10-09T05:24:29.663Z",
+    "settled_cost_usd": 0.006352
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-full-r1",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:24:33.049Z",
+    "settled_cost_usd": 0.006682
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-full-r2",
+    "reserved_usd": 0.034828,
+    "started_at": "2026-10-09T05:24:36.287Z",
+    "settled_cost_usd": 0.008006
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-retrieved-r2",
+    "reserved_usd": 0.033768,
+    "started_at": "2026-10-09T05:24:47.084Z",
+    "settled_cost_usd": 0.007414
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.031716,
+    "started_at": "2026-10-09T05:24:50.523Z",
+    "settled_cost_usd": 0.006486
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-full-r2",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:25:00.848Z",
+    "settled_cost_usd": 0.007432
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-full-r2",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:25:03.882Z",
+    "settled_cost_usd": 0.007632
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.031812,
+    "started_at": "2026-10-09T05:25:07.238Z",
+    "settled_cost_usd": 0.00663
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-full-r2",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:25:10.003Z",
+    "settled_cost_usd": 0.006652
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-retrieved-r2",
+    "reserved_usd": 0.03126,
+    "started_at": "2026-10-09T05:25:12.796Z",
+    "settled_cost_usd": 0.006128
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-retrieved-r2",
+    "reserved_usd": 0.031412,
+    "started_at": "2026-10-09T05:25:15.364Z",
+    "settled_cost_usd": 0.006322
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-full-r2",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:25:18.482Z",
+    "settled_cost_usd": 0.006842
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-full-r2",
+    "reserved_usd": 0.03416,
+    "started_at": "2026-10-09T05:25:21.605Z",
+    "settled_cost_usd": 0.007186
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-retrieved-r2",
+    "reserved_usd": 0.033256,
+    "started_at": "2026-10-09T05:25:24.449Z",
+    "settled_cost_usd": 0.006826
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.031716,
+    "started_at": "2026-10-09T05:25:27.472Z",
+    "settled_cost_usd": 0.006616
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-distributed-full-r3",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:25:31.072Z",
+    "settled_cost_usd": 0.007392
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-full-r3",
+    "reserved_usd": 0.032872,
+    "started_at": "2026-10-09T05:25:34.196Z",
+    "settled_cost_usd": 0.007152
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.031812,
+    "started_at": "2026-10-09T05:25:37.181Z",
+    "settled_cost_usd": 0.00685
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-retrieved-r3",
+    "reserved_usd": 0.033768,
+    "started_at": "2026-10-09T05:25:40.160Z",
+    "settled_cost_usd": 0.007754
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-fr-attached-full-r3",
+    "reserved_usd": 0.034828,
+    "started_at": "2026-10-09T05:25:43.338Z",
+    "settled_cost_usd": 0.008136
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-retrieved-r3",
+    "reserved_usd": 0.031412,
+    "started_at": "2026-10-09T05:25:46.703Z",
+    "settled_cost_usd": 0.006072
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-grouped-full-r3",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:25:49.572Z",
+    "settled_cost_usd": 0.006762
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-full-r3",
+    "reserved_usd": 0.03416,
+    "started_at": "2026-10-09T05:25:53.116Z",
+    "settled_cost_usd": 0.007186
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-attached-retrieved-r3",
+    "reserved_usd": 0.033256,
+    "started_at": "2026-10-09T05:25:56.056Z",
+    "settled_cost_usd": 0.006866
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-retrieved-r3",
+    "reserved_usd": 0.03126,
+    "started_at": "2026-10-09T05:25:58.822Z",
+    "settled_cost_usd": 0.006248
+  },
+  {
+    "run_id": "anthropic-attached-v2-price-en-distributed-full-r3",
+    "reserved_usd": 0.032316,
+    "started_at": "2026-10-09T05:26:01.360Z",
+    "settled_cost_usd": 0.006472
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.031616,
+    "started_at": "2026-10-09T05:26:04.155Z",
+    "settled_cost_usd": 0.007088
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-full-r1",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:26:07.555Z",
+    "settled_cost_usd": 0.007194
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-full-r1",
+    "reserved_usd": 0.035736,
+    "started_at": "2026-10-09T05:26:10.958Z",
+    "settled_cost_usd": 0.008244
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-retrieved-r1",
+    "reserved_usd": 0.032356,
+    "started_at": "2026-10-09T05:26:14.654Z",
+    "settled_cost_usd": 0.007214
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.031196,
+    "started_at": "2026-10-09T05:26:18.247Z",
+    "settled_cost_usd": 0.006354
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-full-r1",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:26:33.057Z",
+    "settled_cost_usd": 0.007384
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-retrieved-r1",
+    "reserved_usd": 0.031644,
+    "started_at": "2026-10-09T05:26:40.175Z",
+    "settled_cost_usd": 0.006526
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-full-r1",
+    "reserved_usd": 0.0346,
+    "started_at": "2026-10-09T05:26:44.586Z",
+    "settled_cost_usd": 0.006922
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-full-r1",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:26:47.812Z",
+    "settled_cost_usd": 0.006594
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-retrieved-r1",
+    "reserved_usd": 0.030656,
+    "started_at": "2026-10-09T05:26:50.936Z",
+    "settled_cost_usd": 0.005892
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-retrieved-r1",
+    "reserved_usd": 0.031088,
+    "started_at": "2026-10-09T05:26:54.063Z",
+    "settled_cost_usd": 0.006346
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-full-r1",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:26:57.179Z",
+    "settled_cost_usd": 0.006614
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-full-r2",
+    "reserved_usd": 0.035736,
+    "started_at": "2026-10-09T05:26:59.905Z",
+    "settled_cost_usd": 0.008194
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-retrieved-r2",
+    "reserved_usd": 0.032356,
+    "started_at": "2026-10-09T05:27:03.734Z",
+    "settled_cost_usd": 0.007414
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-retrieved-r2",
+    "reserved_usd": 0.031196,
+    "started_at": "2026-10-09T05:27:06.812Z",
+    "settled_cost_usd": 0.006314
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-full-r2",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:27:11.443Z",
+    "settled_cost_usd": 0.007584
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-full-r2",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:27:25.446Z",
+    "settled_cost_usd": 0.007124
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-retrieved-r2",
+    "reserved_usd": 0.031616,
+    "started_at": "2026-10-09T05:27:32.365Z",
+    "settled_cost_usd": 0.006768
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-full-r2",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:27:35.279Z",
+    "settled_cost_usd": 0.006494
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-retrieved-r2",
+    "reserved_usd": 0.030656,
+    "started_at": "2026-10-09T05:27:38.122Z",
+    "settled_cost_usd": 0.005782
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-retrieved-r2",
+    "reserved_usd": 0.031088,
+    "started_at": "2026-10-09T05:27:40.486Z",
+    "settled_cost_usd": 0.006346
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-full-r2",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:27:43.114Z",
+    "settled_cost_usd": 0.006254
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-full-r2",
+    "reserved_usd": 0.0346,
+    "started_at": "2026-10-09T05:27:45.592Z",
+    "settled_cost_usd": 0.007032
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-retrieved-r2",
+    "reserved_usd": 0.031644,
+    "started_at": "2026-10-09T05:27:48.304Z",
+    "settled_cost_usd": 0.006246
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-retrieved-r3",
+    "reserved_usd": 0.031196,
+    "started_at": "2026-10-09T05:27:51.094Z",
+    "settled_cost_usd": 0.006214
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-distributed-full-r3",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:27:53.945Z",
+    "settled_cost_usd": 0.007394
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-full-r3",
+    "reserved_usd": 0.032564,
+    "started_at": "2026-10-09T05:27:57.029Z",
+    "settled_cost_usd": 0.007614
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-grouped-retrieved-r3",
+    "reserved_usd": 0.031616,
+    "started_at": "2026-10-09T05:28:00.129Z",
+    "settled_cost_usd": 0.006828
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-retrieved-r3",
+    "reserved_usd": 0.032356,
+    "started_at": "2026-10-09T05:28:03.178Z",
+    "settled_cost_usd": 0.007444
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-fr-attached-full-r3",
+    "reserved_usd": 0.035736,
+    "started_at": "2026-10-09T05:28:06.174Z",
+    "settled_cost_usd": 0.008134
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-retrieved-r3",
+    "reserved_usd": 0.031088,
+    "started_at": "2026-10-09T05:28:09.406Z",
+    "settled_cost_usd": 0.006036
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-grouped-full-r3",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:28:11.941Z",
+    "settled_cost_usd": 0.006784
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-full-r3",
+    "reserved_usd": 0.0346,
+    "started_at": "2026-10-09T05:28:14.698Z",
+    "settled_cost_usd": 0.006852
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-attached-retrieved-r3",
+    "reserved_usd": 0.031644,
+    "started_at": "2026-10-09T05:28:17.310Z",
+    "settled_cost_usd": 0.006276
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-retrieved-r3",
+    "reserved_usd": 0.030656,
+    "started_at": "2026-10-09T05:28:20.167Z",
+    "settled_cost_usd": 0.005772
+  },
+  {
+    "run_id": "anthropic-attached-v2-time-en-distributed-full-r3",
+    "reserved_usd": 0.031904,
+    "started_at": "2026-10-09T05:28:22.678Z",
+    "settled_cost_usd": 0.006464
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-retrieved-r1",
+    "reserved_usd": 0.031308,
+    "started_at": "2026-10-09T05:28:25.273Z",
+    "settled_cost_usd": 0.006672
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-full-r1",
+    "reserved_usd": 0.032428,
+    "started_at": "2026-10-09T05:28:28.662Z",
+    "settled_cost_usd": 0.007004
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-full-r1",
+    "reserved_usd": 0.033244,
+    "started_at": "2026-10-09T05:28:32.194Z",
+    "settled_cost_usd": 0.007002
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-retrieved-r1",
+    "reserved_usd": 0.031308,
+    "started_at": "2026-10-09T05:28:37.345Z",
+    "settled_cost_usd": 0.006152
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-retrieved-r1",
+    "reserved_usd": 0.031408,
+    "started_at": "2026-10-09T05:28:41.148Z",
+    "settled_cost_usd": 0.00688
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-full-r1",
+    "reserved_usd": 0.032428,
+    "started_at": "2026-10-09T05:28:57.272Z",
+    "settled_cost_usd": null
+  }
+]

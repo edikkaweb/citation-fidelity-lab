@@ -1,0 +1,182 @@
+[
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-retrieved-r1",
+    "started_at": "2026-10-09T05:44:58.230Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005564
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-full-r1",
+    "started_at": "2026-10-09T05:45:04.238Z",
+    "reserved_usd": 0.032252,
+    "settled_cost_usd": 0.006424
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-full-r1",
+    "started_at": "2026-10-09T05:45:07.344Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006044
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-retrieved-r1",
+    "started_at": "2026-10-09T05:45:10.398Z",
+    "reserved_usd": 0.030732,
+    "settled_cost_usd": 0.005978
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-retrieved-r1",
+    "started_at": "2026-10-09T05:45:13.421Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005664
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-full-r1",
+    "started_at": "2026-10-09T05:45:16.569Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006174
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-full-r2",
+    "started_at": "2026-10-09T05:45:19.474Z",
+    "reserved_usd": 0.033244,
+    "settled_cost_usd": 0.007222
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-retrieved-r2",
+    "started_at": "2026-10-09T05:45:22.739Z",
+    "reserved_usd": 0.031308,
+    "settled_cost_usd": 0.006652
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-retrieved-r2",
+    "started_at": "2026-10-09T05:45:26.333Z",
+    "reserved_usd": 0.031408,
+    "settled_cost_usd": 0.00665
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-full-r2",
+    "started_at": "2026-10-09T05:45:29.593Z",
+    "reserved_usd": 0.032428,
+    "settled_cost_usd": 0.007104
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-full-r2",
+    "started_at": "2026-10-09T05:45:33.070Z",
+    "reserved_usd": 0.032428,
+    "settled_cost_usd": 0.006694
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-retrieved-r2",
+    "started_at": "2026-10-09T05:45:36.402Z",
+    "reserved_usd": 0.031308,
+    "settled_cost_usd": 0.006552
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-full-r2",
+    "started_at": "2026-10-09T05:45:39.796Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006094
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-retrieved-r2",
+    "started_at": "2026-10-09T05:45:42.399Z",
+    "reserved_usd": 0.030732,
+    "settled_cost_usd": 0.006008
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-retrieved-r2",
+    "started_at": "2026-10-09T05:45:45.093Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005524
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-full-r2",
+    "started_at": "2026-10-09T05:45:47.669Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006164
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-full-r2",
+    "started_at": "2026-10-09T05:45:50.310Z",
+    "reserved_usd": 0.032252,
+    "settled_cost_usd": 0.006424
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-retrieved-r2",
+    "started_at": "2026-10-09T05:45:52.906Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005384
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-retrieved-r3",
+    "started_at": "2026-10-09T05:45:55.311Z",
+    "reserved_usd": 0.031408,
+    "settled_cost_usd": 0.0066
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-distributed-full-r3",
+    "started_at": "2026-10-09T05:45:58.212Z",
+    "reserved_usd": 0.032428,
+    "settled_cost_usd": 0.007064
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-full-r3",
+    "started_at": "2026-10-09T05:46:01.264Z",
+    "reserved_usd": 0.032428,
+    "settled_cost_usd": 0.006784
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-grouped-retrieved-r3",
+    "started_at": "2026-10-09T05:46:04.145Z",
+    "reserved_usd": 0.031308,
+    "settled_cost_usd": 0.006512
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-retrieved-r3",
+    "started_at": "2026-10-09T05:46:06.859Z",
+    "reserved_usd": 0.031308,
+    "settled_cost_usd": 0.006582
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-fr-attached-full-r3",
+    "started_at": "2026-10-09T05:46:09.643Z",
+    "reserved_usd": 0.033244,
+    "settled_cost_usd": 0.007122
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-retrieved-r3",
+    "started_at": "2026-10-09T05:46:12.916Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005764
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-grouped-full-r3",
+    "started_at": "2026-10-09T05:46:15.451Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006194
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-full-r3",
+    "started_at": "2026-10-09T05:46:18.051Z",
+    "reserved_usd": 0.032252,
+    "settled_cost_usd": 0.006354
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-attached-retrieved-r3",
+    "started_at": "2026-10-09T05:46:20.720Z",
+    "reserved_usd": 0.030676,
+    "settled_cost_usd": 0.005644
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-retrieved-r3",
+    "started_at": "2026-10-09T05:46:23.103Z",
+    "reserved_usd": 0.030732,
+    "settled_cost_usd": 0.005998
+  },
+  {
+    "run_id": "anthropic-attached-v2-hosting-en-distributed-full-r3",
+    "started_at": "2026-10-09T05:46:25.697Z",
+    "reserved_usd": 0.031568,
+    "settled_cost_usd": 0.006304
+  }
+]
